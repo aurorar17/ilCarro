@@ -1,0 +1,31 @@
+# Ignora file di configurazione sensibili
+.env
+*.env
+config.json
+secrets.json
+
+# Ignora dipendenze di Node.js
+node_modules/
+npm-debug.log
+yarn.lock
+package-lock.json
+
+# Ignora file di build o temporanei
+dist/
+build/
+cache/
+*.log
+*.tmp
+*.bak
+
+# Ignora file del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Ignora IDE e editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-workspace
+*.sublime-project
