@@ -1,0 +1,11 @@
+.header {
+  background-color: #ffffff;
+}
+
+header ul li {
+  list-style-type: none;
+}
+
+.map-container {
+  display: none;
+}
