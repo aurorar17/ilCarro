@@ -1,5 +1,6 @@
 .header {
   background-color: #ffffff;
+  border: 5px solid rgb(156, 58, 83);
 }
 
 header ul li {

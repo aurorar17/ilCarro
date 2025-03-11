@@ -7,11 +7,17 @@
   .header-nav-1 img {
     height: auto;
     width: 130px;
+    padding-left: 8%;
   }
 
   .header-nav-1-list {
     padding-right: 15%;
-    padding-top: 10%;
+  }
+
+  .header-nav-1-list img {
+    height: auto;
+    width: 50px;
+    padding: 20px 10px;
   }
 
   .header-nav-1 ul {
