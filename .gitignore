@@ -3,12 +3,17 @@
 *.env
 config.json
 secrets.json
+*.pem
+*.key
+*.crt
+*.p12
 
 # Ignora dipendenze di Node.js
 node_modules/
 npm-debug.log
 yarn.lock
 package-lock.json
+
 
 # Ignora file di build o temporanei
 dist/
@@ -17,10 +22,15 @@ cache/
 *.log
 *.tmp
 *.bak
+logs/
+*.log
+*.tmp
 
 # Ignora file del sistema operativo
 .DS_Store
 Thumbs.db
+.AppleDouble
+.LSOverride
 
 # Ignora IDE e editor files
 .vscode/
@@ -29,3 +39,9 @@ Thumbs.db
 *.swo
 *.sublime-workspace
 *.sublime-project
+
+*.sqlite3
+*.db
+.cache/
+
+
