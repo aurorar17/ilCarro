@@ -1,0 +1,69 @@
+/* NAV BAR setting for SMALL SCREENS */
+
+@media (max-width: 768px) {
+  .header-nav-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-nav-1 img {
+    height: auto;
+    width: 150px;
+    margin-right: 50px;
+    padding: 0 0 0 10px;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .header-nav-2-list {
+    background-color: rgb(156, 58, 83);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .header-nav-2-list img {
+    height: auto;
+    width: 25px;
+    border-left: 0;
+    padding: 10px 10px;
+    margin-top: 0;
+  }
+
+  .header-nav-2 ul {
+    padding-left: 0;
+  }
+}
+
+/* NAV BAR setting for LARGE SCREENS */
+
+@media (min-width: 769px) {
+  .header-nav-1 {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header-nav-1 img {
+    height: auto;
+    width: 130px;
+    padding-left: 8%;
+  }
+
+  .header-nav-1-list {
+    padding-right: 15%;
+  }
+
+  .header-nav-1-list img {
+    height: auto;
+    width: 50px;
+    padding: 20px 10px;
+  }
+
+  .header-nav-1 ul {
+    padding-left: 0;
+  }
+}

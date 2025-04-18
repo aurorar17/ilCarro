@@ -1,17 +1,32 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import "../styles/Header.css";
 
 const Header = () => {
+  const [isHidden, setIsHidden] = useState(false);
+  let lastScrollY = 0;
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      if (currentScrollY > lastScrollY.current) {
+        setIsHidden(true);
+      } else {
+        setIsHidden(false);
+      }
+      lastScrollY.current = currentScrollY;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  });
   return (
     <header className="header">
-      <nav className="header-nav-1">
+      <nav className={`header-nav-1 ${isHidden ? "hidden" : ""}`}>
         <ul>
           <li>
             <img src="/assets/IlCarro-logo2.jpeg" alt="Logo" />
-          </li>
-        </ul>
-        <ul className="header-nav-1-list">
-          <li>
-            <img src="/assets/Menu-button.png" alt="Menu" />
           </li>
         </ul>
       </nav>

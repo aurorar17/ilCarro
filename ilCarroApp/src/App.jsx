@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 import "./styles/main.css";
-import "./styles/mobile.css";
+import "./styles/header.css";
 
 import Home from "./pages/Home";
 
@@ -16,7 +16,7 @@ function App() {
       <nav>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/"></Link>
           </li>
           <li></li>
           <li></li>
