@@ -14,13 +14,7 @@ function App() {
       <Header />
       {/* Menu di navigazione */}
       <nav>
-        <ul>
-          <li>
-            <Link to="/"></Link>
-          </li>
-          <li></li>
-          <li></li>
-        </ul>
+        <Link to="/"></Link>
       </nav>
 
       {/* Gestione delle pagine */}
