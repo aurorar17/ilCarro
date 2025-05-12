@@ -45,6 +45,10 @@ const Header = () => {
             <img src="/assets/Mail.png" alt="Mail" />
           </li>
         </ul>
+        <div class="menu">
+          <a href="menu">Download MENU</a>
+          <img src="/assets/menu.svg" alt="" />
+        </div>
       </nav>
     </header>
   );

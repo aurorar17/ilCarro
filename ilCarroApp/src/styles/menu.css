@@ -1,8 +1,0 @@
-.menu {
-  background-image: url("/assets/sfondo-menu.JPG"); /* Percorso dell'immagine */
-  background-size: cover; /* Adatta l'immagine per coprire l'intera area */
-  background-position: center; /* Centra l'immagine */
-  background-repeat: no-repeat; /* Evita la ripetizione dell'immagine */
-  height: 400px; /* Altezza della sezione menu */
-  width: 100%; /* Larghezza completa */
-}
