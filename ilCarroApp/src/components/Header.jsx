@@ -1,17 +1,17 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "../styles/Header.css";
 
 const Header = () => {
-  const [isHidden, setIsHidden] = useState(false);
-  let lastScrollY = 0;
+  const [isFixed, setIsFixed] = useState(false);
+  const lastScrollY = useRef(0);
 
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
       if (currentScrollY > lastScrollY.current) {
-        setIsHidden(true);
+        setIsFixed(true);
       } else {
-        setIsHidden(false);
+        setIsFixed(false);
       }
       lastScrollY.current = currentScrollY;
     };
@@ -23,14 +23,17 @@ const Header = () => {
   });
   return (
     <header className="header">
-      <nav className={`header-nav-1 ${isHidden ? "hidden" : ""}`}>
+      <nav className="header-nav-1">
         <ul>
           <li>
-            <img src="/assets/IlCarro-logo2.jpeg" alt="Logo" />
+            <img src="/assets/foto-header2.png" alt="Logo" />
           </li>
         </ul>
+        <ul>
+          <img src="/assets/foto-header1.png" alt="Logo" />
+        </ul>
       </nav>
-      <nav className="header-nav-2">
+      <nav className={`header-nav-2 ${isFixed ? "fixed" : ""}`}>
         <ul className="header-nav-2-list">
           <li>
             <img src="/assets/Facebook.png" alt="Facebook" />
@@ -45,7 +48,7 @@ const Header = () => {
             <img src="/assets/Mail.png" alt="Mail" />
           </li>
         </ul>
-        <div class="menu">
+        <div className="menu">
           <a href="menu">Download MENU</a>
           <img src="/assets/menu.svg" alt="" />
         </div>

@@ -3,15 +3,15 @@
 @media (max-width: 768px) {
   .header-nav-1 {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    display: none;
+    padding-right: 100%;
+    margin-bottom: 0%;
   }
 
   .header-nav-1 img {
     height: auto;
     width: 100px;
-    padding-left: 0;
   }
 
   .hidden {
@@ -24,6 +24,7 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    margin-top: 0%;
   }
 
   .header-nav-2-list img {
@@ -52,6 +53,15 @@
     height: auto;
     width: 27px;
     padding-left: 2%;
+  }
+
+  .header-nav-2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
   }
 }
 

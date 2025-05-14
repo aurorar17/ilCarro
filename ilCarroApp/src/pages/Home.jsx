@@ -1,11 +1,11 @@
 import Header from "../components/Header";
-import Menu from "../components/Menu";
+import Main from "../components/Main";
 
 const Home = () => {
   return (
     <div>
       <main>
-        <Menu />
+        <Main />
       </main>
     </div>
   );
