@@ -25,13 +25,13 @@ const Header = () => {
     <header className="header">
       <nav className="header-nav-1">
         <ul>
-          <li>
+          {/* <li>
             <img src="/assets/foto-header2.png" alt="Logo" />
-          </li>
+          </li> */}
         </ul>
-        <ul>
+        {/* <ul>
           <img src="/assets/foto-header1.png" alt="Logo" />
-        </ul>
+        </ul> */}
       </nav>
       <nav className={`header-nav-2 ${isFixed ? "fixed" : ""}`}>
         <ul className="header-nav-2-list">

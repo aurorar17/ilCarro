@@ -1,6 +1,10 @@
+body {
+  background-color: #3d3a3a;
+}
+
 .header {
-  background-color: #ffffff;
-  border: 5px solid rgb(156, 58, 83);
+  background-color: #e4d9d9;
+  border: 5px solid #987654;
   border-radius: 2%;
 }
 
@@ -10,4 +14,8 @@ header ul li {
 
 .map-container {
   display: none;
+}
+
+h3 {
+  color: white;
 }
