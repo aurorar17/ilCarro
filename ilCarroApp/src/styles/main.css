@@ -1,0 +1,21 @@
+body {
+  background-color: #3d3a3a;
+}
+
+.header {
+  background-color: #e4d9d9;
+  border: 5px solid #987654;
+  border-radius: 2%;
+}
+
+header ul li {
+  list-style-type: none;
+}
+
+.map-container {
+  display: none;
+}
+
+h3 {
+  color: white;
+}
