@@ -1,12 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
 .header {
   background-color: #ffffff;
   border: 5px solid rgb(156, 58, 83);
+}
+
+header ul {
+  padding-left: 0;
+  margin: 0;
 }
 
 header ul li {
   list-style-type: none;
 }
 
+.header-nav-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.header-nav-1 img {
+  height: auto;
+  width: 150px;
+}
+
+.header-nav-1-list img {
+  height: auto;
+  width: 50px;
+  cursor: pointer;
+}
+
+.header-nav-2-list {
+  background-color: rgb(156, 58, 83);
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.header-nav-2-list img {
+  height: auto;
+  width: 35px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.header-nav-2-list img:hover {
+  transform: scale(1.1);
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+main section {
+  margin-bottom: 3rem;
+}
+
+main h2,
+main h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: rgb(156, 58, 83);
+}
+
+main h2 {
+  font-size: 2rem;
+}
+
+main h3 {
+  font-size: 1.5rem;
+}
+
+main section > div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+main section img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
 .map-container {
-  display: none;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 450px;
+}
+
+main section p {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+  line-height: 1.8;
+}
+
+footer {
+  background-color: rgb(156, 58, 83);
+  color: white;
+  padding: 2rem;
+}
+
+footer nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+footer h4 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+footer ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+footer ul li {
+  margin-bottom: 0.5rem;
 }
