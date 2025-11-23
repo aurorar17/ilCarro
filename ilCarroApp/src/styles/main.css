@@ -1,10 +1,11 @@
 body {
-  background-color: #3d3a3a;
+  background-color: #e4d9d9;
+  font-family: noto-sans, sans-serif;
 }
 
 .header {
   background-color: #e4d9d9;
-  border: 5px solid #987654;
+  border: 5px solid rgb(116, 91, 62);
   border-radius: 2%;
 }
 
@@ -18,4 +19,15 @@ header ul li {
 
 h3 {
   color: white;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+}
+
+img:not(.no-responsive) {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }

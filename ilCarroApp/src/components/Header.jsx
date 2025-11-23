@@ -1,58 +1,46 @@
-import React, { useState, useEffect, useRef } from "react";
+import React from "react";
 import "../styles/Header.css";
 
 const Header = () => {
-  const [isFixed, setIsFixed] = useState(false);
-  const lastScrollY = useRef(0);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-      if (currentScrollY > lastScrollY.current) {
-        setIsFixed(true);
-      } else {
-        setIsFixed(false);
-      }
-      lastScrollY.current = currentScrollY;
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  });
   return (
     <header className="header">
       <nav className="header-nav-1">
+        <ul></ul>
         <ul>
-          {/* <li>
-            <img src="/assets/foto-header2.png" alt="Logo" />
-          </li> */}
+          <img src="/assets/logodef.png" alt="Logo" class="no-responsive" />
         </ul>
-        {/* <ul>
-          <img src="/assets/foto-header1.png" alt="Logo" />
-        </ul> */}
       </nav>
-      <nav className={`header-nav-2 ${isFixed ? "fixed" : ""}`}>
-        <ul className="header-nav-2-list">
-          <li>
-            <img src="/assets/Facebook.png" alt="Facebook" />
-          </li>
-          <li>
-            <img src="/assets/Instagram.png" alt="Instagram" />
-          </li>
-          <li>
-            <img src="/assets/Phone.png" alt="Telefono" />
-          </li>
-          <li>
-            <img src="/assets/Mail.png" alt="Mail" />
-          </li>
-        </ul>
+
+      <section className="fixed-mobile-section">
         <div className="menu">
-          <a href="menu">Download MENU</a>
-          <img src="/assets/menu.svg" alt="" />
+          <a href="menu">Scarica il menù</a>
+          <img src="/assets/menu.png" alt="" />
         </div>
-      </nav>
+        <nav className="header-nav-2">
+          <ul className="header-nav-2-list">
+            <li>
+              <a href="https://www.facebook.com/ilCarro.Caorle">
+                <img src="/assets/Facebook.png" alt="Facebook" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/ristorante_ilcarro/">
+                <img src="/assets/Instagram.png" alt="Instagram" />
+              </a>
+            </li>
+            <li>
+              <a href="tel:+390421299478">
+                <img src="/assets/Whatsapp.png" alt="Telefono" />
+              </a>
+            </li>
+            <li>
+              <a href="mailto:ristoranteilcarro.dunaverde@gmail.com">
+                <img src="/assets/mail.png" alt="Email" />
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </section>
     </header>
   );
 };

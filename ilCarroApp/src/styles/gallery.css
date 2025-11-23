@@ -48,3 +48,19 @@
   display: block;
   border-radius: 10px;
 }
+
+/* schermi piccoli: contenitori occupano tutta la larghezza */
+@media (max-width: 600px) {
+  .gallery-container {
+    gap: 12px;
+  }
+  .gallery-item {
+    max-width: 100%;
+    aspect-ratio: unset; /* opzionale: lascia altezza auto */
+    height: auto;
+  }
+  .gallery-item img {
+    height: auto;
+    object-fit: cover;
+  }
+}

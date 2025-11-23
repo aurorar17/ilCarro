@@ -1,3 +1,10 @@
+.edu-nsw-act-cursive font > {
+  font-family: "Edu NSW ACT Cursive", cursive;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
 .main {
   background-image: url("/assets/SFONDO-MENU.jpeg");
   background-size: cover;
@@ -10,6 +17,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  color: white;
 }
 
 .main-cover-sfondo {
@@ -37,4 +45,13 @@
   font-size: 16px;
   cursor: pointer;
   border-radius: 10px;
+}
+
+#sottolineatura {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+}
+
+.main-1 {
+  color: white;
 }

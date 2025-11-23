@@ -7,11 +7,12 @@
     align-items: center;
     padding-right: 100%;
     margin-bottom: 0%;
+    background-color: rgb(116, 91, 62);
   }
 
   .header-nav-1 img {
     height: auto;
-    width: 100px;
+    width: 150px;
   }
 
   .hidden {
@@ -19,7 +20,7 @@
   }
 
   .header-nav-2-list {
-    background-color: #987654;
+    background-color: rgb(116, 91, 62);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -42,7 +43,7 @@
 
   .menu {
     margin-top: 0;
-    padding-top: 0%;
+    padding-top: 2%;
     padding-bottom: 2%;
     display: flex;
     justify-content: center;

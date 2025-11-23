@@ -1,11 +1,79 @@
 .footer {
-  background-color: #987654;
+  background-color: rgb(116, 91, 62);
   color: rgb(255, 255, 255);
 }
 
-.footer-nav {
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  padding: 20px;
+@media (max-width: 768px) {
+  .footer-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 8%;
+  }
+
+  .footer-nav ul {
+    margin-top: 0px;
+  }
+
+  .footer-nav h4 {
+    margin-bottom: 3%;
+  }
+
+  #orari-tab {
+    margin-top: 5%;
+  }
+
+  #orari-tab th {
+    border: 1px solid rgb(255, 255, 255);
+  }
+
+  #orari-tab td {
+    text-align: center;
+  }
+
+  img:not(.no-responsive) {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .footer-logo-section img {
+    display: block;
+    margin: 0 auto;
+    max-width: 60%;
+    padding: 4%;
+  }
+
+  .contact-table {
+    margin: 0 auto;
+    text-align: left;
+    font-size: 15px;
+  }
+
+  .contact-table th {
+    padding: 2%;
+  }
+
+  .link-utili a {
+    color: rgb(116, 91, 62);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+  }
+
+  .link-utili a:link {
+    text-decoration-color: blue;
+  }
+
+  .link-utili a:visited {
+    text-decoration-color: purple;
+  }
+
+  .link-utili-section {
+    background-color: #e4d9d9;
+    color: rgb(116, 91, 62);
+    margin-top: 8%;
+    padding-left: 4%;
+    padding-bottom: 4%;
+    padding-right: 4%;
+  }
 }
