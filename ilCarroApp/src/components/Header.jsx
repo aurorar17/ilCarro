@@ -5,9 +5,14 @@ const Header = () => {
   return (
     <header className="header">
       <nav className="header-nav-1">
-        <ul></ul>
         <ul>
-          <img src="/assets/logodef.png" alt="Logo" class="no-responsive" />
+          <li>
+            <img src="/assets/logodef.png" alt="Logo" class="no-responsive" />
+          </li>
+          <li id="menu-2">
+            <a href="menu">Scarica il menù</a>
+            <img src="/assets/menu.png" alt="" />
+          </li>
         </ul>
       </nav>
 
@@ -16,6 +21,7 @@ const Header = () => {
           <a href="menu">Scarica il menù</a>
           <img src="/assets/menu.png" alt="" />
         </div>
+        <span></span>
         <nav className="header-nav-2">
           <ul className="header-nav-2-list">
             <li>

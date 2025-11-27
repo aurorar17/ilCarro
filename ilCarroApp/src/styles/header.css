@@ -1,4 +1,5 @@
-/* NAV BAR setting for SMALL SCREENS */
+/* HEADER setting for SMALL SCREENS */
+/* HEADER impostazioni per schermi piccoli */
 
 @media (max-width: 768px) {
   .header-nav-1 {
@@ -64,33 +65,60 @@
     z-index: 1000;
     width: 100%;
   } */
+
+  #menu-2 {
+    display: none;
+  }
 }
 
-/* NAV BAR setting for LARGE SCREENS */
+/* HEADER setting for LARGE SCREENS */
+/* HEADER impostazioni per schermi grandi */
 
 @media (min-width: 769px) {
   .header-nav-1 {
+    width: 100%;
+
+    background-color: rgb(116, 91, 62);
+    padding: 1%;
+  }
+
+  .header-nav-1 ul {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   .header-nav-1 img {
     height: auto;
-    width: 130px;
-    padding-left: 8%;
+    width: 20%;
   }
 
-  .header-nav-1-list {
-    padding-right: 15%;
-  }
-
-  .header-nav-1-list img {
-    height: auto;
+  #menu-2 img {
     width: 50px;
-    padding: 20px 10px;
   }
 
-  .header-nav-1 ul {
-    padding-left: 0;
+  .menu {
+    display: none;
+  }
+
+  .header-nav-2 {
+    margin-top: 1%;
+  }
+
+  .header-nav-2-list {
+    background-color: rgb(116, 91, 62);
+    margin-top: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1%;
+  }
+
+  .header-nav-2-list img {
+    height: auto;
+    width: 30px;
+    border-left: 1px solid white;
+    padding: 10px 10px;
   }
 }
