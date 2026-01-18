@@ -31,28 +31,12 @@ const Footer = () => {
             </tr>
           </table>
           <section class="link-utili-section">
-            <h4>Link Utili</h4>
+            <h4>Scopri di più:</h4>
             <ul class="link-utili">
               <li>
-                <a href="https://www.facebook.com/ilCarro.Caorle">
-                  Pagina Facebook
-                </a>
+                <img src="/assets/trip-adv.png" alt="" />
               </li>
-              <li>
-                <a href="https://www.instagram.com/ristorante_ilcarro/">
-                  Pagina Instagram
-                </a>
-              </li>
-              <li>
-                <a href="https://maps.app.goo.gl/nXhAHvMCkuNSNdkR8">
-                  Indicazioni
-                </a>
-              </li>
-              <li>
-                <a href="https://www.tripadvisor.com/Restaurant_Review-g194710-d1884475-Reviews-Ristorante_Il_Carro-Caorle_Veneto.html">
-                  Recensioni Trip Advisor
-                </a>
-              </li>
+              <li></li>
             </ul>
           </section>
           <h4>Orari</h4>

@@ -10,7 +10,7 @@ const Header = () => {
             <img src="/assets/logodef.png" alt="Logo" class="no-responsive" />
           </li>
           <li id="menu-2">
-            <a href="menu">Scarica il menù</a>
+            <a href="menu">Visita il menù</a>
             <img src="/assets/menu.png" alt="" />
           </li>
         </ul>

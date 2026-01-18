@@ -49,6 +49,12 @@
   border-radius: 10px;
 }
 
+#g-ita {
+  font-style: italic;
+  font-weight: bold;
+  color: #987654;
+}
+
 /* schermi piccoli: contenitori occupano tutta la larghezza */
 @media (max-width: 600px) {
   .gallery-container {
@@ -62,5 +68,27 @@
   .gallery-item img {
     height: auto;
     object-fit: cover;
+  }
+
+  button {
+    /* display: flex; */
+    background-color: #987654;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  #p-g-1 {
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  #p-g-2 {
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
   }
 }

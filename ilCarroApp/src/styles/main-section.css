@@ -47,10 +47,10 @@
   border-radius: 10px;
 }
 
-#sottolineatura {
+/* #sottolineatura {
   text-decoration: underline;
-  text-decoration-style: wavy;
-}
+  font-style: italic;
+} */
 
 .main-1 {
   color: white;

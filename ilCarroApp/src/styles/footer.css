@@ -9,6 +9,7 @@
     flex-direction: column;
     align-items: left;
     padding: 8%;
+    margin-top: 10%;
   }
 
   .footer-nav ul {
@@ -52,20 +53,6 @@
 
   .contact-table th {
     padding: 2%;
-  }
-
-  .link-utili a {
-    color: rgb(116, 91, 62);
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
-  }
-
-  .link-utili a:link {
-    text-decoration-color: blue;
-  }
-
-  .link-utili a:visited {
-    text-decoration-color: purple;
   }
 
   .link-utili-section {

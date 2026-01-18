@@ -19,10 +19,10 @@ const Main = () => {
         </div>
       </div>
       <div className="main-1">
-        <p>
+        {/* <p>
           Dal 1975, offriamo piatti di pesce e carne preparati con ingredienti
           freschi, locali e di prima qualità.
-        </p>
+        </p> */}
       </div>
       <div>
         <Gallery />

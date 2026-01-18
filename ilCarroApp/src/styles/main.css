@@ -31,3 +31,8 @@ img:not(.no-responsive) {
   height: auto;
   display: block;
 }
+
+#g-ita {
+  color: #987654;
+  font-weight: bold;
+}
