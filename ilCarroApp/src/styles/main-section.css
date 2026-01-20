@@ -55,3 +55,20 @@
 .main-1 {
   color: white;
 }
+
+@media (min-width: 768px) {
+  .main {
+    height: 80vh;
+  }
+
+  .sfondo-main h1 {
+    margin-left: 8%;
+    font-size: 40px;
+  }
+
+  .main-button {
+    margin-top: 10%;
+    padding: 15px 30px;
+    font-size: 20px;
+  }
+}
