@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+// import "../styles/main-section.css";
 import "../styles/gallery.css";
 import "../styles/main.css";
 
@@ -17,28 +18,26 @@ const images = [
   "/assets/6.png",
 ];
 
-const IMAGES_PER_PAGE = 3;
-
 const Gallery = () => {
   const [current, setCurrent] = useState(0);
+  const imagesPerPage = 3;
+  const totalPages = Math.ceil(images.length / imagesPerPage);
 
-  const nextImages = () => {
-    setCurrent((prev) =>
-      prev + IMAGES_PER_PAGE >= images.length ? 0 : prev + IMAGES_PER_PAGE,
-    );
+  const prevPage = () => {
+    setCurrent((prev) => (prev === 0 ? totalPages - 1 : prev - 1));
   };
 
-  const prevImages = () => {
-    setCurrent((prev) =>
-      prev === 0 ? images.length - IMAGES_PER_PAGE : prev - IMAGES_PER_PAGE,
-    );
+  const nextPage = () => {
+    setCurrent((prev) => (prev === totalPages - 1 ? 0 : prev + 1));
   };
 
-  const visibleImages = images.slice(current, current + IMAGES_PER_PAGE);
+  const startIndex = current * imagesPerPage;
+  const displayedImages = images.slice(startIndex, startIndex + imagesPerPage);
 
   return (
     <section className="gallery">
       <div className="gallery-header">
+        {/* <h2>Galleria</h2> */}
         <p id="p-g-1">
           La cucina propone
           <span id="g-ita"> specialità di pesce</span> ispirate alla tradizione
@@ -46,31 +45,23 @@ const Gallery = () => {
         </p>
 
         <p id="p-g-2">
-          Il nostro fiore all’occhiello è una ricercata selezione di frutti di
+          Il nostro fiore all'occhiello è una ricercata selezione di frutti di
           mare, serviti crudi per esaltarne{" "}
           <span id="g-ita"> freschezza e sapore autentico</span>
         </p>
       </div>
-
-      <div className="gallery-container">
-        <button className="gallery-btn" onClick={prevImages}>
+      <div className="gallery-wrapper">
+        <button className="gallery-btn-prev" onClick={prevPage}>
           ←
         </button>
-
-        <div className="gallery-grid">
-          {visibleImages.map((img, index) => (
-            <div className="gallery-item">
-              <img
-                key={index}
-                src={img}
-                alt={`Gallery ${current + index + 1}`}
-                className="gallery-img"
-              />
+        <div className="gallery-container">
+          {displayedImages.map((img, index) => (
+            <div key={startIndex + index} className="gallery-item">
+              <img src={img} alt={`Gallery ${startIndex + index + 1}`} />
             </div>
           ))}
         </div>
-
-        <button className="gallery-btn" onClick={nextImages}>
+        <button className="gallery-btn-next" onClick={nextPage}>
           →
         </button>
       </div>
