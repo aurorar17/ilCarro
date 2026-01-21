@@ -7,7 +7,7 @@ const Footer = () => {
     <footer>
       <div className="footer">
         <nav className="footer-nav">
-          <h4>Contatti</h4>
+          {/* <h4>Contatti</h4> */}
           <table class="contact-table">
             <tr>
               <th>Email:</th>
@@ -39,7 +39,7 @@ const Footer = () => {
               <li></li>
             </ul>
           </section>
-          <h4>Orari</h4>
+          {/* <h4>Orari</h4> */}
           <table id="orari-tab">
             <tr>
               <th>Giorni</th>

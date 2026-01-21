@@ -64,3 +64,39 @@
     padding-right: 4%;
   }
 }
+
+@media (min-width: 768px) {
+  .footer-nav {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    padding: 2%;
+    margin-top: 5%;
+  }
+
+  .footer-logo-section img {
+    display: block;
+    margin: 0 auto;
+    max-width: 40%;
+    padding: 2%;
+  }
+
+  .contact-table {
+    text-align: left;
+    font-size: 20px;
+  }
+
+  #orari-tab {
+    text-align: left;
+    font-size: 25px;
+  }
+
+  .footer-logo-section {
+    display: flex;
+  }
+
+  .footer-logo-section img {
+    height: auto;
+    width: 35%;
+  }
+}
