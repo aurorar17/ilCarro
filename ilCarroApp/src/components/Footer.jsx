@@ -47,31 +47,31 @@ const Footer = () => {
             </tr>
             <tr>
               <td>Lunedi</td>
-              <td>CHIUSO</td>
+              <td>12:00 - 14:30</td>
             </tr>
             <tr>
               <td>Martedì</td>
-              <td>11-22:30 / 11-00:30</td>
+              <td>CHIUSO</td>
             </tr>
             <tr>
               <td>Mercoledì</td>
-              <td>11-22:30 / 11-00:30</td>
+              <td>12:00 - 14:30</td>
             </tr>
             <tr>
               <td>Giovedì</td>
-              <td>11-22:30 / 11-00:30</td>
+              <td>12:00 - 14:30</td>
             </tr>
             <tr>
               <td>Venerdì</td>
-              <td>11-22:30 / 11-00:30</td>
+              <td>12:30 - 14:30 / 18:30 - 23:30</td>
             </tr>
             <tr>
               <td>Sabato</td>
-              <td>11-22:30 / 11-00:30</td>
+              <td>12:30 - 14:30 / 18:30 - 23:30</td>
             </tr>
             <tr>
               <td>Domenica</td>
-              <td>11-22:30 / 11-00:30</td>
+              <td>12:30 - 14:30</td>
             </tr>
           </table>
         </nav>
