@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../styles/gallery.css";
 import "../styles/main.css";
 
@@ -10,31 +10,44 @@ const images = [
   "/assets/desert2.JPG",
   "/assets/foto-staff.JPG",
   "/assets/1.png",
-  "/assets/2.png",
-  "/assets/3.png",
   "/assets/4.png",
   "/assets/5.png",
   "/assets/6.png",
+  "/assets/2.png",
+  "/assets/3.png",
 ];
 
-const IMAGES_PER_PAGE = 3;
+const getImagesPerPage = () => (window.innerWidth < 600 ? 1 : 3);
 
 const Gallery = () => {
   const [current, setCurrent] = useState(0);
+  const [imagesPerPage, setImagesPerPage] = useState(getImagesPerPage());
+
+  useEffect(() => {
+    const handleResize = () => {
+      setImagesPerPage(window.innerWidth < 600 ? 1 : 3);
+      setCurrent(0);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const nextImages = () => {
     setCurrent((prev) =>
-      prev + IMAGES_PER_PAGE >= images.length ? 0 : prev + IMAGES_PER_PAGE,
+      prev + imagesPerPage >= images.length ? 0 : prev + imagesPerPage,
     );
   };
 
   const prevImages = () => {
     setCurrent((prev) =>
-      prev === 0 ? images.length - IMAGES_PER_PAGE : prev - IMAGES_PER_PAGE,
+      prev === 0 ? images.length - imagesPerPage : prev - imagesPerPage,
     );
   };
 
-  const visibleImages = images.slice(current, current + IMAGES_PER_PAGE);
+  const visibleImages = images.slice(current, current + imagesPerPage);
+
+  const emptySlots = imagesPerPage - visibleImages.length;
 
   return (
     <section className="gallery">
@@ -59,14 +72,17 @@ const Gallery = () => {
 
         <div className="gallery-grid">
           {visibleImages.map((img, index) => (
-            <div className="gallery-item">
+            <div className="gallery-item" key={`img-${index}`}>
               <img
-                key={index}
                 src={img}
                 alt={`Gallery ${current + index + 1}`}
                 className="gallery-img"
               />
             </div>
+          ))}
+
+          {Array.from({ length: emptySlots }).map((_, i) => (
+            <div className="gallery-item placeholder" key={`empty-${i}`} />
           ))}
         </div>
 

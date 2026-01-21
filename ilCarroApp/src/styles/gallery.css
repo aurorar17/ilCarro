@@ -1,18 +1,19 @@
-/* CONTENITORE GENERALE */
-.gallery-container {
-  display: block;
-  align-items: center;
-  justify-content: center;
-}
-
-.gallery-container button {
-  display: block;
-  align-items: center;
-  margin-bottom: 4%;
-}
-
+/* HEADER */
 .gallery-header {
   margin-top: 5%;
+}
+
+.placeholder {
+  visibility: hidden;
+}
+
+/* CONTENITORE GENERALE */
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-top: 20px;
 }
 
 /* BOTTONI */
@@ -20,32 +21,34 @@
   background-color: #987654;
   color: white;
   border: none;
-  padding: 10px 15px;
+  padding: 10px 16px;
   border-radius: 5px;
   cursor: pointer;
   font-size: 18px;
-  align-items: center;
 }
 
 /* GRID IMMAGINI – MOBILE */
 .gallery-grid {
   display: grid;
-  gap: 10px;
+  grid-template-columns: 1fr;
   width: 100%;
+  max-width: 360px; /* 🔒 BLOCCO */
+  max-height: 200px;
 }
 
-/* IMMAGINI */
+/* CONTENITORE IMMAGINE */
 .gallery-item {
   width: 100%;
-  height: 220px; /* altezza fissa */
+  aspect-ratio: 4 / 3; /* BLOCCO DEFINITIVO */
   overflow: hidden;
-  border-radius: 10px;
 }
 
+/* IMMAGINE */
 .gallery-img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* fondamentale */
+  object-fit: cover; /* CHIAVE */
+  display: block;
 }
 
 /* TESTI */
@@ -63,44 +66,41 @@
   margin: 10px 5%;
 }
 
+@media (max-width: 600px) {
+  #p-g-1,
+  #p-g-2 {
+    font-size: 18px;
+  }
+}
+
 /* DESKTOP */
 @media (min-width: 600px) {
-  .gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    width: 100%;
-    max-width: 1200px;
-    margin-top: 5%;
-    margin-bottom: 5%;
+  .gallery-container {
+    flex-direction: row;
+    justify-content: center;
   }
 
-  .gallery-img {
-    height: 300px;
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    padding: 0;
+    margin-bottom: 10%;
+    margin-top: 3%;
+  }
+
+  @media (min-width: 600px) {
+    .gallery-item {
+      aspect-ratio: 3 / 2;
+    }
+  }
+
+  #p-g-1 {
+    margin-bottom: 3%;
   }
 
   #p-g-1,
   #p-g-2 {
     font-size: 25px;
-  }
-
-  .gallery-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    margin-top: 20px;
-  }
-
-  .gallery-btn {
-    background-color: #987654;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 18px;
-    margin-left: 1%;
-    margin-right: 1%;
   }
 }
