@@ -2,6 +2,7 @@ import React from "react";
 import Gallery from "./Gallery";
 
 import "../styles/main-section.css";
+import TripAdv from "./tripadv";
 
 const Main = () => {
   return (
@@ -26,6 +27,9 @@ const Main = () => {
       </div>
       <div>
         <Gallery />
+      </div>
+      <div>
+        <TripAdv />
       </div>
     </section>
   );

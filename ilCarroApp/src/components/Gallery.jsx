@@ -15,6 +15,12 @@ const images = [
   "/assets/6.png",
   "/assets/2.png",
   "/assets/3.png",
+  "/assets/10.jpg",
+  "/assets/12.jpg",
+  "/assets/13.png",
+  "/assets/11.jpg",
+  "/assets/14.JPG",
+  "/assets/logodef.png",
 ];
 
 const getImagesPerPage = () => (window.innerWidth < 600 ? 1 : 3);

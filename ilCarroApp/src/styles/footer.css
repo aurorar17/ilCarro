@@ -3,6 +3,20 @@
   color: rgb(255, 255, 255);
 }
 
+.link-utili-section {
+  width: 100%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  padding: 0 0px;
+}
+
+.map-iframe {
+  width: 100%;
+  height: 450px;
+  max-width: 600px;
+}
+
 @media (max-width: 768px) {
   .footer-nav {
     display: flex;
@@ -18,6 +32,16 @@
 
   .footer-nav h4 {
     margin-bottom: 3%;
+  }
+
+  .link-utili-section {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .map-iframe {
+    width: 100% !important;
+    height: 300px !important;
   }
 
   #orari-tab {
@@ -60,11 +84,11 @@
 
   .link-utili-section {
     background-color: #e4d9d9;
-    color: rgb(116, 91, 62);
+    /* color: rgb(116, 91, 62);
     margin-top: 8%;
     padding-left: 4%;
     padding-bottom: 4%;
-    padding-right: 4%;
+    padding-right: 4%; */
   }
 }
 
@@ -115,5 +139,15 @@
 
   td {
     border: 1px solid rgb(255, 255, 255);
+  }
+
+  .link-utili-section {
+    width: 30%;
+    overflow-x: hidden;
+  }
+
+  .map-iframe {
+    width: 95% !important;
+    height: 95% !important;
   }
 }

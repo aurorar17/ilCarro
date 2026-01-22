@@ -30,14 +30,15 @@ const Footer = () => {
               <td>viale Selva Rosata 30, Caorle, Italia</td>
             </tr>
           </table>
-          <section class="link-utili-section">
-            <h4>Scopri di più:</h4>
-            <ul class="link-utili">
-              <li>
-                <img src="/assets/trip-adv.png" alt="" />
-              </li>
-              <li></li>
-            </ul>
+          <section className="link-utili-section">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2792.9626482072727!2d12.797174375866899!3d45.57118972629438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477bfa0115fab351%3A0x825bfdb00e744ede!2sRistorante%20Il%20Carro!5e0!3m2!1sen!2sit!4v1769079276204!5m2!1sen!2sit"
+              className="map-iframe"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
           </section>
           {/* <h4>Orari</h4> */}
           <table id="orari-tab">

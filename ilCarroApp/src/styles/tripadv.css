@@ -1,0 +1,73 @@
+/* TripAdvisor Certificate of Excellence Styles */
+.tripAdv-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px;
+}
+
+.TA_certificateOfExcellence {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.TA_selfserveprop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.tripAdv-title {
+  margin-top: 1%;
+  margin-bottom: 3%;
+  font-size: 18px;
+  color: #333;
+  font-weight: 600;
+  text-align: center;
+}
+
+.TA_links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.TA_links li {
+  display: inline-block;
+}
+
+.widCOEImg {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .TA_certificateOfExcellence {
+    padding: 10px;
+  }
+
+  .widCOEImg {
+    width: 150px;
+  }
+
+  .tripAdv-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .tripAdv-title {
+    margin-bottom: 5%;
+  }
+
+  #TA_selfserveprop833 img {
+    width: 300px;
+    height: auto;
+  }
+}
