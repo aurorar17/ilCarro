@@ -6,6 +6,7 @@ import "./styles/header.css";
 
 import Home from "./pages/Home";
 import Header from "./components/Header";
+import Menu from "./pages/Menu";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       {/* Gestione delle pagine */}
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/menu" element={<Menu />} />
       </Routes>
     </Router>
   );

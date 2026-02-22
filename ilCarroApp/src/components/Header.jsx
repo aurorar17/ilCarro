@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../styles/Header.css";
 
 const Header = () => {
@@ -10,16 +11,20 @@ const Header = () => {
             <img src="/assets/logodef.png" alt="Logo" class="no-responsive" />
           </li>
           <li id="menu-2">
-            <a href="menu">Visita il menù</a>
-            <img src="/assets/menu.png" alt="" />
+            <Link to="/menu">
+              Visita il menù
+              <img src="/assets/menu.png" alt="" />
+            </Link>
           </li>
         </ul>
       </nav>
 
       <section className="fixed-mobile-section">
         <div className="menu">
-          <a href="menu">Scarica il menù</a>
-          <img src="/assets/menu.png" alt="" />
+          <Link to="/menu">
+            <a href="menu">Scarica il menù</a>
+            <img src="/assets/menu.png" alt="" />
+          </Link>
         </div>
         <span></span>
         <nav className="header-nav-2">
