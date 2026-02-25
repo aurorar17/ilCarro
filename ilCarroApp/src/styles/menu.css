@@ -85,3 +85,89 @@
     color: black;
   }
 }
+
+.menu-table td {
+  text-align: center;
+  width: 33%;
+}
+
+.menu-table {
+  padding-top: 5%;
+}
+.menu-table button {
+  color: rgb(116, 91, 62);
+  border: 2px solid rgb(116, 91, 62);
+  border-radius: 8px;
+  margin: 0.5rem auto;
+  display: block;
+  font-size: 1.25rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 1%;
+  width: 100%;
+  max-width: 180px;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 2rem;
+}
+
+.menu ul h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+#mobilespan {
+  display: block;
+  border: 1px solid rgb(116, 91, 62);
+  height: 2px;
+  width: 100%;
+  margin-top: 10%;
+}
+
+h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.25rem;
+  margin-top: 0.5rem;
+  text-align: center;
+  color: black;
+}
+
+#regioni h3 {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  text-align: center;
+  color: rgb(116, 91, 62);
+}
+
+h4 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  text-align: left;
+  color: rgb(116, 91, 62);
+}
+
+p {
+  font-size: 0.9rem;
+  padding: 0;
+  text-align: left;
+  color: black;
+}

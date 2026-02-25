@@ -4,7 +4,6 @@ import Header from "../components/Header";
 import "../styles/Menu.css";
 
 const Menu = () => {
-  // ...existing code...
   const [showScrollButton, setShowScrollButton] = React.useState(false);
   const scrollToSection = (id) => {
     const section = document.getElementById(id);

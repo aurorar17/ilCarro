@@ -8,11 +8,13 @@ const Header = ({ isMenuPage }) => {
       <nav className="header-nav-1">
         <ul>
           <li>
-            <img
-              src="/assets/logodef.png"
-              alt="Logo"
-              className="no-responsive"
-            />
+            <Link to="/">
+              <img
+                src="/assets/logodef.png"
+                alt="Logo"
+                className="no-responsive"
+              />
+            </Link>
           </li>
           <li id="menu-2">
             <Link to="/menu">
