@@ -3,7 +3,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import "../styles/Menu.css";
 
-const Menu = () => {
+const MenuEN = () => {
   // ...existing code...
   const [showScrollButton, setShowScrollButton] = React.useState(false);
   const scrollToSection = (id) => {
@@ -29,22 +29,22 @@ const Menu = () => {
             <tr>
               <td style={{ textAlign: "center" }}>
                 <button onClick={() => scrollToSection("antipasti")}>
-                  Antipasti
+                  Appetizer
                 </button>
               </td>
               <td style={{ textAlign: "center" }}>
-                <button onClick={() => scrollToSection("primi")}>Primi</button>
+                <button onClick={() => scrollToSection("primi")}>First</button>
               </td>
               <td style={{ textAlign: "center" }}>
                 <button onClick={() => scrollToSection("secondi")}>
-                  Secondi
+                  Second
                 </button>
               </td>
             </tr>
             <tr>
               <td style={{ textAlign: "center" }}>
                 <button onClick={() => scrollToSection("contorni")}>
-                  Contorni
+                  Sides
                 </button>
               </td>
               <td style={{ textAlign: "center" }}>
@@ -52,15 +52,13 @@ const Menu = () => {
               </td>
               <td style={{ textAlign: "center" }}>
                 <button onClick={() => scrollToSection("bevande")}>
-                  Bevande
+                  Beverages
                 </button>
               </td>
             </tr>
             <tr>
               <td colSpan={3} style={{ textAlign: "center" }}>
-                <button onClick={() => scrollToSection("vini")}>
-                  Carta dei Vini
-                </button>
+                <button onClick={() => scrollToSection("vini")}>Wines</button>
               </td>
             </tr>
           </tbody>
@@ -90,72 +88,72 @@ const Menu = () => {
         )}
         <span id="mobilespan"></span>
         <section id="antipasti">
-          <h2>Antipasti</h2>
-          <h3>Antipasti di Pesce</h3>
+          <h2>Appetizer</h2>
+          <h3>Fish Appetizer</h3>
           <ul>
             <li>
               <h4>Tavolozza di Crudo</h4>
-              <p>(Tonno, salmone, branzino, scampi, gamberi rossi)</p>
+              <p>(Tuna, salmon, seaboss, scampi, red prawns)</p>
             </li>
             <li>
               <h4>Antipasto Misto dell' Adriatico</h4>
               <p>
-                (Crema di dentice, sarde in saor, moscardino, coda di gamberi,
-                seppie, canace)
+                (Snopper cream, sardines in saor, moscardini, shrimp tail,
+                cuttlefish, cicada)
               </p>
             </li>
             <li>
               <h4>Antipasto di Pesce Affumicato</h4>
-              <p>(Seppie, salmone, tonno, ombrina, spada)</p>
+              <p>(Cuttlefish, salmon, tuna, ombrina, swordfish)</p>
             </li>
             <li>
               <h4>Cicchetti Veneziani</h4>
-              <p>(Sarde in saor, baccalà mantecato, canoce, moscardino)</p>
+              <p>(Sardines in saor, salted ood, mantis shrimps, moscardini)</p>
             </li>
             <li>
-              <h4>Gamberi in Saor</h4>
+              <h4>Prawns in Saor</h4>
             </li>
             <li>
-              <h4>Sarde in Saor</h4>
+              <h4>Sardines in Saor</h4>
             </li>
             <li>
-              <h4>Baccalà Mantecato</h4>
+              <h4>Salted Cod</h4>
             </li>
             <li>
-              <h4>Cozze e vongole</h4>
+              <h4>Mussels and Clams</h4>
             </li>
             <li>
-              <h4>Cozze alla Marinara</h4>
+              <h4>Marinara Musserls with Tomatoes Sauce</h4>
             </li>
             <li>
-              <h4>Capesante grigliate</h4>
+              <h4>Grilled Scallops</h4>
             </li>
             <li>
-              <h4>Moscardino di Caorle</h4>
+              <h4>Baby Octopus from Caorle</h4>
             </li>
             <li>
-              <h4>Granchio al Rosmarino</h4>
+              <h4>Crab with Rosemary</h4>
             </li>
             <li>
-              <h4>Schie e Polenta</h4>
+              <h4>Schie and Corn meal</h4>
             </li>
             <li>
-              <h4>Alici Marinate</h4>
+              <h4>Crab with Rosemary</h4>
             </li>
           </ul>
-          <h3>Antipasti di Carne</h3>
+          <h3>Meat Appetizer</h3>
           <ul>
             <li>
-              <h4>Caprese con Bufala e Pomodoro</h4>
+              <h4>Bufala Mozzarella and Tomatoes</h4>
             </li>
             <li>
-              <h4>Prosciutto Crudo con Burrata</h4>
+              <h4>Raw Ham with Burrata</h4>
             </li>
             <li>
-              <h4>Prosciutto e Melone</h4>
+              <h4>Raw Ham and Melon</h4>
             </li>
             <li>
-              <h4>Parmigiana di Melanzane</h4>
+              <h4>Eggplant Parmesan</h4>
             </li>
           </ul>
           {showScrollButton && (
@@ -205,33 +203,33 @@ const Menu = () => {
         </section>
         <span id="mobilespan"></span>
         <section id="primi">
-          <h2>Primi</h2>
-          <h3>Primi di Pesce</h3>
+          <h2>First Courses</h2>
+          <h3>Fish First Courses</h3>
           <ul>
             <li>
-              <h4>Spaghetti allo Scoglio</h4>
+              <h4>Spaghetti with Seafood</h4>
             </li>
             <li>
-              <h4>Spaghetti alle Vongole</h4>
+              <h4>Spaghetti with Clams</h4>
             </li>
             <li>
-              <h4>Tagliolini al Granchio</h4>
+              <h4>Homemade Tagliolini with Crab</h4>
             </li>
             <li>
-              <h4>Tagliolini al Nero di Seppia</h4>
+              <h4>Homemade Tagliolini with Cuttlefish Ink</h4>
             </li>
             <li>
               <h4>
-                Risotto ai Frutti di Mare
+                Risotto with Seafood
                 <br />
-                (Minimo 2 persone)
+                (Minimum 2 people)
               </h4>
             </li>
             <li>
-              <h4>Gnocchi con Gamberi, Pesto e Pomodorini</h4>
+              <h4>Homemade Gnocchi with Shrimps, Pesto and Cherry Tomatoes</h4>
             </li>
           </ul>
-          <h3>Primi di Carne</h3>
+          <h3>Meat First Courses</h3>
           <ul>
             <li>
               <h4>Lasagne alla Bolognese</h4>
@@ -243,80 +241,84 @@ const Menu = () => {
               <h4>Gnocchi Gorgonzola e Speck</h4>
             </li>
             <li>
-              <h4>Penne al Ragù</h4>
+              <h4>Penne with Meat Sauce</h4>
             </li>
             <li>
-              <h4>Penne al Pomodoro</h4>
+              <h4>Penne with Tomato Sauce</h4>
             </li>
           </ul>
         </section>
         <span id="mobilespan"></span>
         <section id="secondi">
-          <h2>Secondi</h2>
-          <h3>Secondi di Pesce</h3>
+          <h2>Second Courses</h2>
+          <h3>Fish Second Courses</h3>
           <ul>
             <li>
-              <h4>Pesce al Forno</h4>
-              <p>(Branzino, orata, rombo con verdure)</p>
+              <h4>Baked Fish with Vegetables</h4>
+              <p>(Baked sea boss, sea bream, turbot with vegetables)</p>
             </li>
             <li>
-              <h4>Pesce alla Griglia</h4>
-              <p>(Branzino, orata, rombo con verdure)</p>
+              <h4>Grilled Fish with Vegetables</h4>
+              <p>(Grilled sea boss, sea bream, turbot with vegetables)</p>
             </li>
             <li>
-              <h4>Grigliata Mista di Pesce</h4>
-              <p>(Sogliola, Branzino, Mazzancolle, Seppie e Polenta)</p>
+              <h4>Mixed Grilled Fish and Polenta</h4>
+              <p>
+                (Grilled sole, sea boss filet, prawn, cuttlefish and corn meal
+                porridge)
+              </p>
             </li>
             <li>
-              <h4>Frittura Mista di Pesce con Verdurine Fritte</h4>
+              <h4>Mixed Fried Fish with Fried Vegetables</h4>
             </li>
             <li>
-              <h4>Calamarini Fritti con Verdurine Fritte</h4>
+              <h4>Fried Calamari with Fried Vegetables</h4>
             </li>
             <li>
-              <h4>Sogliola alla Griglia con Polenta</h4>
+              <h4>Grilled Sole with Grilled Corn Meal Porridge</h4>
             </li>
             <li>
-              <h4>Seppie alla Griglia</h4>
+              <h4>Grilled Cuttlefish</h4>
             </li>
             <li>
-              <h4>Seppie in Umido con Polenta</h4>
+              <h4>Steamed Cuttlefish with Corn Meal Porridge</h4>
+            </li>
+            <li>
+              <h4>Baked Sea Boss with Taggiasche Olives and Cherry Tomatoes</h4>
+            </li>
+          </ul>
+          <h3>Meat Second Courses</h3>
+          <ul>
+            <li>
+              <h4>Mixed Grilled Meat with Grilled Corn Meal Porridge</h4>
             </li>
             <li>
               <h4>
-                Filetto di Branzino al Forno con Pomodorini e Olive Taggiasche
+                Thick-sliced Beef Steak with Arugula, Parmesan and Cherry
+                Tomatoes
               </h4>
             </li>
-          </ul>
-          <h3>Secondi di Carne</h3>
-          <ul>
             <li>
-              <h4>Grigliata Mista di Carne</h4>
-            </li>
-            <li>
-              <h4>Tagliata di Manzo con Rucola, Grana e Pomodorini</h4>
-            </li>
-            <li>
-              <h4>Cotoletta di Maiale alla Milanese con Patatine Fritte</h4>
+              <h4>Fried Pork Cutlet alla Milanese with French Fries</h4>
             </li>
           </ul>
         </section>
         <span id="mobilespan"></span>
         <section id="contorni">
-          <h2>Contorni</h2>
+          <h2>Sides</h2>
           <ul>
             <li>
-              <h4>Patatine Fritte</h4>
+              <h4>French Fries</h4>
             </li>
             <li>
-              <h4>Verdure Rosolate</h4>
+              <h4>Browned Vegetables</h4>
             </li>
             <li>
-              <h4>Insalata Mista</h4>
-              (Insalata Verde, pomodori, carote, Cetrioli)
+              <h4>Mixed Salad</h4>
+              (Green salad, tomatoes, carrots, cucumbers)
             </li>
             <li>
-              <h4>Insalata Verde</h4>
+              <h4>Green Salad</h4>
             </li>
           </ul>
         </section>
@@ -326,150 +328,149 @@ const Menu = () => {
           <ul>
             <li>
               <h4>Margherita</h4>
-              <p>(Pomodoro, mozzarella)</p>
+              <p>(Tomato sauce, mozzarella)</p>
             </li>
             <li>
               <h4>Marinara</h4>
-              <p>(Pomodoro, aglio, origano)</p>
+              <p>(Tomato sauce, garlic, origano)</p>
             </li>
             <li>
               <h4>Prosciutto e Funghi</h4>
-              <p>(Pomodoro, mozzarella, prosciutto cotto, funghi)</p>
+              <p>(Tomato sauce, mozzarella, ham, mushrooms)</p>
             </li>
             <li>
               <h4>Capricciosa</h4>
-              <p>
-                (Pomodoro, mozzarella, funghi, carciofini, prosciutto cotto )
-              </p>
+              <p>(Tomato sauce, mozzarella, mushrooms, artichokes, ham)</p>
             </li>
             <li>
               <h4>Napoli</h4>
-              <p>(Pomodoro, mozzarella, capperi, acciughe)</p>
+              <p>(Tomato sauce, mozzarella, capers, anchovies)</p>
             </li>
             <li>
               <h4>Tonno e Cipolla</h4>
-              <p>(Pomodoro, mozzarella, tonno, cipolla)</p>
+              <p>(Tomato sauce, mozzarella, tuna, onion)</p>
             </li>
             <li>
               <h4>4 Stagioni</h4>
               <p>
-                (Pomodoro, mozzarella, prosciutto cotto, funghi, carciofini,
-                salamino )
+                (Tomato sauce, mozzarella, ham, mushrooms, artichokes, salami)
               </p>
             </li>
             <li>
               <h4>Viennese</h4>
-              <p>(Pomodoro, mozzarella, wurstel)</p>
+              <p>(Tomato sauce, mozzarella, wurstel)</p>
             </li>
             <li>
               <h4>Quattro Formaggi</h4>
-              <p>(Pomodoro, mozzarella, brie, gorgonzola)</p>
+              <p>(Tomato sauce, mozzarella, brie, gorgonzola)</p>
             </li>
             <li>
               <h4>Patatosa</h4>
-              <p>(Pomodoro, mozzarella, patatine fritte)</p>
+              <p>(Tomato sauce, mozzarella, french fries)</p>
             </li>
             <li>
               <h4>Pugliese</h4>
-              <p>(Pomodoro, mozzarella, cipolla)</p>
+              <p>(Tomato sauce, mozzarella, onion)</p>
             </li>
             <li>
               <h4>Diavola</h4>
-              <p>(Pomodoro, mozzarella, salamino piccante)</p>
+              <p>(Tomato sauce, mozzarella, spicy salami)</p>
             </li>
             <li>
               <h4>San Daniele</h4>
-              <p>(Pomodoro, mozzarella, prosciutto crudo San Daniele)</p>
+              <p>(Tomato sauce, mozzarella, raw ham San Daniele)</p>
             </li>
             <li>
               <h4>Frutti di Mare</h4>
-              <p>(Pomodoro, mozzarella, frutti di mare)</p>
+              <p>(Tomato sauce, mozzarella, seafood)</p>
             </li>
             <li>
               <h4>Sorrentina</h4>
               <p>
-                (Pomodoro, mozzarella, funghi, carciofi, peperoni, salamino,
-                prosciutto cotto, cipolla, aglio)
+                (Tomato sauce, mozzarella, mushrooms, artichokes, peppers, spicy
+                salami, ham, onion, garlic)
               </p>
             </li>
             <li>
               <h4>Zingara</h4>
-              <p>(Pomodoro, mozzarella, funghi, peperoni)</p>
+              <p>(Tomato sauce, mozzarella, mushrooms, peppers)</p>
             </li>
             <li>
               <h4>Vegetariana</h4>
               <p>
-                (Pomodoro, mozzarella, zucchine, melanzane, peperoni grigliati)
+                (Tomato sauce, mozzarella, zucchini, eggplant, grilled peppers)
               </p>
             </li>
             <li>
               <h4>Fresca</h4>
-              <p>(Pomodoro, mozzarella, rucola, pomodorini, grana)</p>
+              <p>
+                (Tomato sauce, mozzarella, arugula, cherry tomatoes, parmesan)
+              </p>
             </li>
             <li>
               <h4>"il Carro"</h4>
               <p>
-                (Pomodoro, mozzarella, funghi, uovo, carciofi, prosciutto crudo)
+                (Tomato sauce, mozzarella, mushrooms, egg, artichokes, raw ham)
               </p>
             </li>
             <li>
               <h4>Bresaola Rucola e Grana</h4>
-              <p>(Pomodoro, mozzarella, bresaola, rucola, grana padano)</p>
+              <p>(Tomato sauce, mozzarella, bresaola, arugula, parmesan)</p>
             </li>
             <li>
               <h4>Hawaii</h4>
-              <p>(Pomodoro, mozzarella, prosciutto, ananas)</p>
+              <p>(Tomato sauce, mozzarella, ham, pineapple)</p>
             </li>
             <li>
               <h4>Malga</h4>
-              <p>(Pomodoro, mozzarella, brie, speck, porcini)</p>
+              <p>(Tomato sauce, mozzarella, brie, speck, porcini mushrooms)</p>
             </li>
             <li>
               <h4>Calzone Classico</h4>
-              <p>(Pomodoro, mozzarella, prosciutto cotto, funghi)</p>
+              <p>(Tomato sauce, mozzarella, ham, mushrooms)</p>
             </li>
             <li>
               <h4>Estate</h4>
-              <p>(Mozzarella, pomodorini, pesto)</p>
+              <p>(Mozzarella, cherry tomatoes, pesto)</p>
             </li>
             <li>
               <h4>Meraviglia</h4>
-              <p>(Brie, porcini, pesto di rucola, pomodorini)</p>
+              <p>(Brie, porcini, pesto di rucola, cherry tomatoes)</p>
             </li>
           </ul>
         </section>
         <span id="mobilespan"></span>
         <section id="bevande">
-          <h2>Bevande</h2>
-          <h3>Acqua</h3>
+          <h2>Beverages</h2>
+          <h3>Water</h3>
           <ul>
-            <h4>Acqua Naturale</h4>
-            <h4>Acqua Frizzante</h4>
+            <h4>Water</h4>
+            <h4>Sparkling Water</h4>
           </ul>
-          <h3>Bibite alla Spina</h3>
+          <h3>Draft Drinks</h3>
           <ul>
             <li>
               <h4>Pepsi Cola</h4>
-              <p>(Piccola e media)</p>
+              <p>(Small and medium)</p>
             </li>
             <li>
               <h4>Aranciata</h4>
-              <p>(Piccola e media)</p>
+              <p>(Small and medium)</p>
             </li>
             <li>
               <h4>Lemon Soda</h4>
-              <p>(Piccola e media)</p>
+              <p>(Small and medium)</p>
             </li>
           </ul>
-          <h3>Birre alla Spina</h3>
+          <h3>Draft Beers</h3>
           <ul>
             <li>
-              <h4>Birra Artigianale Ca' Barley</h4>
-              <p>(Piccola e media)</p>
+              <h4>Artisanal Beer Ca' Barley</h4>
+              <p>(Small and medium)</p>
             </li>
             <li>
               <h4>Radler</h4>
-              <p>(Piccola e media)</p>
+              <p>(Small and medium)</p>
             </li>
           </ul>
           <h3>Aperitivi</h3>
@@ -487,7 +488,7 @@ const Menu = () => {
               <h4>Spritz Hugo</h4>
             </li>
           </ul>
-          <h3>Bibite in Lattina</h3>
+          <h3>Cans</h3>
           <ul>
             <li>
               <h4>Coca Cola</h4>
@@ -496,10 +497,10 @@ const Menu = () => {
               <h4>Coca Cola Zero</h4>
             </li>
             <li>
-              <h4>Te al Limone</h4>
+              <h4>Lemon The</h4>
             </li>
             <li>
-              <h4>Te alla Pesca</h4>
+              <h4>Peach The</h4>
             </li>
             <li>
               <h4>Fanta</h4>
@@ -508,23 +509,23 @@ const Menu = () => {
               <h4>Sprite</h4>
             </li>
           </ul>
-          <h3>Birre in Bottiglia</h3>
+          <h3>Beer Bottles</h3>
           <ul>
             <li>
               <h4>Waitzen</h4>
             </li>
             <li>
-              <h4>Analcolica</h4>
+              <h4>No Alcohol</h4>
             </li>
           </ul>
-          <h3>Vino alla Spina</h3>
+          <h3>Draft Wine</h3>
           <ul>
             <li>
-              <h4>Vino Frizzante</h4>
+              <h4>Sparkling Wine</h4>
               <p>(0,25l, 0,50l, 1l)</p>
             </li>
             <li>
-              <h4>Vino Bianco Fermo</h4>
+              <h4>White Wine</h4>
               <p>(0,25l, 0,50l, 1l)</p>
             </li>
             <li>
@@ -536,7 +537,7 @@ const Menu = () => {
         <span id="mobilespan"></span>
         <section id="vini">
           <h2>Carta dei Vini</h2>
-          <h3>Vini Bianchi</h3>
+          <h3>White Wines</h3>
           <ul>
             <h4>Azienda Agricola "Vie D'alt" (Prepotto, Udine)</h4>
             <li>Friulano</li>
@@ -548,13 +549,13 @@ const Menu = () => {
             <h4>Azienda Agricola "Col Saliz" (Refrontolo, Treviso)</h4>
             <li>Prosecco Extra Dry</li>
           </ul>
-          <h3>Vini Rossi</h3>
+          <h3>Red Wines</h3>
           <ul>
             <h4>Azienda Agricola "Vie D'alt" (Prepotto, Udine)</h4>
             <li>Merlot</li>
             <li>Cabernet Franc</li>
           </ul>
-          <h3>Vini Dessert</h3>
+          <h3>Dessert Wines</h3>
           <ul>
             <h4>Azienda Agricola "Vie D'alt" (Prepotto, Udine)</h4>
             <li>Verduzzo</li>
@@ -565,7 +566,7 @@ const Menu = () => {
             <h4>Azienda Agricola "Ca Maiol" (Desenzano del Garda, Brescia)</h4>
             <li>Chiaretto Rosè</li>
           </ul>
-          <h3>Bollicine</h3>
+          <h3>Sparkling</h3>
           <ul>
             <h4>Azienda Agricola "Col Saliz" (Refrontolo, Treviso)</h4>
             <li>Prosecco Extra Dry</li>
@@ -722,4 +723,4 @@ const Menu = () => {
   );
 };
 
-export default Menu;
+export default MenuEN;

@@ -7,11 +7,12 @@ import "./styles/header.css";
 import Home from "./pages/Home";
 import Header from "./components/Header";
 import Menu from "./pages/Menu";
+import MenuEN from "./pages/MenuEN";
+import MenuDE from "./pages/MenuDE";
 
 function App() {
   return (
     <Router>
-      <Header />
       {/* Menu di navigazione */}
       <nav>
         <Link to="/"></Link>
@@ -21,6 +22,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/menu" element={<Menu />} />
+        <Route path="/menu-en" element={<MenuEN />} />
+        <Route path="/menu-de" element={<MenuDE />} />
       </Routes>
     </Router>
   );
