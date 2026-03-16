@@ -1,6 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Gallery from "./Gallery";
-
 import "../styles/main-section.css";
 import TripAdv from "./tripadv";
 
@@ -15,7 +15,11 @@ const Main = () => {
               <span id="sottolineatura">specialità di pesce</span>
             </h1>
             <h2>con prodotti locali e di stagione!</h2>
-            <button className="main-button">Scarica il nostro menù</button>
+            <li>
+              <a href="/menu" className="main-button">
+                Visita il nostro menù
+              </a>
+            </li>
           </div>
         </div>
       </div>

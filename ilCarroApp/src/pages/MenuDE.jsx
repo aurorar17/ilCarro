@@ -4,7 +4,6 @@ import Header from "../components/Header";
 import "../styles/Menu.css";
 
 const MenuDE = () => {
-  // ...existing code...
   const [showScrollButton, setShowScrollButton] = React.useState(false);
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
@@ -29,36 +28,36 @@ const MenuDE = () => {
             <tr>
               <td style={{ textAlign: "center" }}>
                 <button onClick={() => scrollToSection("antipasti")}>
-                  Vorsp.
+                  Appetizer
                 </button>
               </td>
               <td style={{ textAlign: "center" }}>
-                <button onClick={() => scrollToSection("primi")}>Erst.</button>
+                <button onClick={() => scrollToSection("primi")}>First</button>
               </td>
               <td style={{ textAlign: "center" }}>
                 <button onClick={() => scrollToSection("secondi")}>
-                  Haupt.
+                  Second
                 </button>
               </td>
             </tr>
             <tr>
               <td style={{ textAlign: "center" }}>
                 <button onClick={() => scrollToSection("contorni")}>
-                  Beil.
+                  Sides
                 </button>
               </td>
               <td style={{ textAlign: "center" }}>
-                <button onClick={() => scrollToSection("pizze")}>Pizza</button>
+                <button onClick={() => scrollToSection("pizze")}>Pizze</button>
               </td>
               <td style={{ textAlign: "center" }}>
                 <button onClick={() => scrollToSection("bevande")}>
-                  Geträ.
+                  Beverages
                 </button>
               </td>
             </tr>
             <tr>
               <td colSpan={3} style={{ textAlign: "center" }}>
-                <button onClick={() => scrollToSection("vini")}>Weine</button>
+                <button onClick={() => scrollToSection("vini")}>Wines</button>
               </td>
             </tr>
           </tbody>
@@ -92,70 +91,85 @@ const MenuDE = () => {
           <h3>Fischvorspeisen</h3>
           <ul>
             <li>
-              <h4>Rohes Fischplatte</h4>
+              <h4>Tavolozza di Crudo</h4>
               <p>(Thunfisch, Lachs, Wolfsbarsch, Scampi, rote Garnelen)</p>
             </li>
             <li>
-              <h4>Gemischte Vorspeise der Adria</h4>
+              <h4>Antipasto Misto dell' Adriatico</h4>
               <p>
                 (Denticecreme, Sardinen in Saor, Moschuskrake, Garnelenschwanz,
                 Sepia, Canocchie)
               </p>
             </li>
             <li>
-              <h4>Geräucherte Fischvorspeise</h4>
+              <h4>Antipasto di Pesce Affumicato</h4>
               <p>(Sepia, Lachs, Thunfisch, Ombrina, Schwertfisch)</p>
             </li>
             <li>
-              <h4>Venezianische Häppchen</h4>
+              <h4>Cicchetti Veneziani</h4>
               <p>
                 (Sardinen in Saor, Stockfischcreme, Canocchie, Moschuskrake)
               </p>
             </li>
             <li>
-              <h4>Garnelen in Saor</h4>
+              <h4>Gamberi in Saor</h4>
+              <p>(Garnelen, Zwiebeln, Essig, Pinienkerne, Rosinen)</p>
             </li>
             <li>
-              <h4>Sardinen in Saor</h4>
+              <h4>Sarde in Saor</h4>
+              <p>(Sardinen, Zwiebeln, Essig, Pinienkerne, Rosinen)</p>
             </li>
             <li>
-              <h4>Stockfischcreme</h4>
+              <h4>Baccalà Mantecato</h4>
+              <p>(Stockfischcreme, Olivenöl, Knoblauch)</p>
             </li>
             <li>
-              <h4>Miesmuscheln und Venusmuscheln</h4>
+              <h4>Cozze e Vongole</h4>
+              <p>(Miesmuscheln, Venusmuscheln)</p>
             </li>
             <li>
-              <h4>Miesmuscheln nach Marinara-Art</h4>
+              <h4>Cozze alla Marinara</h4>
+              <p>(Miesmuscheln, Tomatensauce, Knoblauch, Petersilie)</p>
             </li>
             <li>
-              <h4>Gegrillte Jakobsmuscheln</h4>
+              <h4>Capesante grigliate</h4>
+              <p>(Gegrillte Jakobsmuscheln)</p>
             </li>
             <li>
-              <h4>Baby-Oktopus aus Caorle</h4>
+              <h4>Moscardino di Caorle</h4>
+              <p>(Kleine Moschuskraken aus Caorle, Tomatensauce)</p>
             </li>
             <li>
-              <h4>Krebs mit Rosmarin</h4>
+              <h4>Granchio al Rosmarino</h4>
+              <p>(Krabbe, Rosmarin)</p>
             </li>
             <li>
-              <h4>Schie und Polenta</h4>
+              <h4>Schie e Polenta</h4>
+              <p>(Kleine Lagunengarnelen, Polenta)</p>
             </li>
             <li>
-              <h4>Marinierte Sardellen</h4>
+              <h4>Alici Marinate</h4>
+              <p>(Marinierte Sardellen, Zitrone, Olivenöl)</p>
             </li>
           </ul>
+
           <h3>Fleischvorspeisen</h3>
           <ul>
             <li>
-              <h4>Büffelmozzarella mit Tomaten</h4>
+              <h4>Caprese con Bufala e Pomodoro</h4>
+              <p>(Büffelmozzarella, Tomaten, Basilikum)</p>
             </li>
             <li>
-              <h4>Rohschinken mit Burrata</h4>
+              <h4>Prosciutto Crudo con Burrata</h4>
+              <p>(Rohschinken, Burrata)</p>
             </li>
             <li>
-              <h4>Rohschinken und Melone</h4>
+              <h4>Prosciutto e Melone</h4>
+              <p>(Rohschinken, Melone)</p>
             </li>
             <li>
-              <h4>Auberginen Parmigiana</h4>
+              <h4>Parmigiana di Melanzane</h4>
+              <p>(Auberginen, Tomatensauce, Parmesan)</p>
             </li>
           </ul>
           {showScrollButton && (
@@ -203,125 +217,151 @@ const MenuDE = () => {
             </button>
           )}
         </section>
+
         <span id="mobilespan"></span>
         <section id="primi">
           <h2>Erste Gänge</h2>
           <h3>Fischgerichte</h3>
           <ul>
             <li>
-              <h4>Spaghetti mit Meeresfrüchten</h4>
+              <h4>Spaghetti allo Scoglio</h4>
+              <p>(Spaghetti, Miesmuscheln, Venusmuscheln, Garnelen, Sepia)</p>
             </li>
             <li>
-              <h4>Spaghetti mit Venusmuscheln</h4>
+              <h4>Spaghetti alle Vongole</h4>
+              <p>(Spaghetti, Venusmuscheln, Knoblauch, Petersilie)</p>
             </li>
             <li>
-              <h4>Hausgemachte Tagliolini mit Krebsfleisch</h4>
+              <h4>Tagliolini al Granchio</h4>
+              <p>(Hausgemachte Tagliolini, Krabbe)</p>
             </li>
             <li>
-              <h4>Hausgemachte Tagliolini mit Sepiatinte</h4>
+              <h4>Tagliolini al Nero di Seppia</h4>
+              <p>(Hausgemachte Tagliolini, Sepiatinte)</p>
             </li>
             <li>
               <h4>
-                Risotto mit Meeresfrüchten
+                Risotto ai Frutti di Mare
                 <br />
                 (Mindestens 2 Personen)
               </h4>
+              <p>(Risotto, Miesmuscheln, Venusmuscheln, Garnelen, Sepia)</p>
             </li>
             <li>
-              <h4>
-                Hausgemachte Gnocchi mit Garnelen, Pesto und Kirschtomaten
-              </h4>
+              <h4>Gnocchi con Gamberi, Pesto e Pomodorini</h4>
+              <p>(Gnocchi, Garnelen, Pesto, Kirschtomaten)</p>
             </li>
           </ul>
+
           <h3>Fleischgerichte</h3>
           <ul>
             <li>
               <h4>Lasagne alla Bolognese</h4>
+              <p>(Lasagne, Fleischragù, Béchamelsauce)</p>
             </li>
             <li>
               <h4>Spaghetti alla Carbonara</h4>
+              <p>(Spaghetti, Ei, Guanciale, Pecorino)</p>
             </li>
             <li>
-              <h4>Gnocchi mit Gorgonzola und Speck</h4>
+              <h4>Gnocchi Gorgonzola e Speck</h4>
+              <p>(Gnocchi, Gorgonzola, Speck)</p>
             </li>
             <li>
-              <h4>Penne mit Fleischsauce</h4>
+              <h4>Penne al Ragù</h4>
+              <p>(Penne, Fleischragù)</p>
             </li>
             <li>
-              <h4>Penne mit Tomatensauce</h4>
+              <h4>Penne al Pomodoro</h4>
+              <p>(Penne, Tomatensauce)</p>
             </li>
           </ul>
         </section>
+
         <span id="mobilespan"></span>
         <section id="secondi">
           <h2>Hauptgerichte</h2>
           <h3>Fischhauptgerichte</h3>
           <ul>
             <li>
-              <h4>Gebratener Fisch mit Gemüse</h4>
+              <h4>Pesce al Forno</h4>
               <p>(Gebratener Wolfsbarsch, Dorade, Steinbutt mit Gemüse)</p>
             </li>
             <li>
-              <h4>Gegrillter Fisch mit Gemüse</h4>
+              <h4>Pesce alla Griglia</h4>
               <p>(Gegrillter Wolfsbarsch, Dorade, Steinbutt mit Gemüse)</p>
             </li>
             <li>
-              <h4>Gemischter gegrillter Fisch und Polenta</h4>
+              <h4>Grigliata Mista di Pesce</h4>
               <p>
                 (Gegrillte Seezunge, Wolfsbarschfilet, Garnele, Sepia und
                 Polenta)
               </p>
             </li>
             <li>
-              <h4>Gemischter frittierter Fisch mit frittiertem Gemüse</h4>
+              <h4>Frittura Mista di Pesce con Verdurine Fritte</h4>
+              <p>(Frittierter Fisch, Garnelen, Calamari, frittierte Gemüse)</p>
             </li>
             <li>
-              <h4>Frittierte Calamari mit frittiertem Gemüse</h4>
+              <h4>Calamarini Fritti con Verdurine Fritte</h4>
+              <p>(Frittierte Calamari, frittierte Gemüse)</p>
             </li>
             <li>
-              <h4>Gegrillte Seezunge mit gegrillter Polenta</h4>
+              <h4>Sogliola alla Griglia con Polenta</h4>
+              <p>(Gegrillte Seezunge, Polenta)</p>
             </li>
             <li>
-              <h4>Gegrillte Sepia</h4>
+              <h4>Seppie alla Griglia</h4>
+              <p>(Gegrillte Sepia)</p>
             </li>
             <li>
-              <h4>Gedünstete Sepia mit Polenta</h4>
+              <h4>Seppie in Umido con Polenta</h4>
+              <p>(Sepia in Tomatensauce, Polenta)</p>
             </li>
             <li>
               <h4>
-                Gebratener Wolfsbarsch mit Taggiasca-Oliven und Kirschtomaten
+                Filetto di Branzino al Forno con Pomodorini e Olive Taggiasche
               </h4>
+              <p>(Wolfsbarschfilet, Kirschtomaten, Taggiasca-Oliven)</p>
             </li>
           </ul>
+
           <h3>Fleischhauptgerichte</h3>
           <ul>
             <li>
-              <h4>Gemischtes gegrilltes Fleisch mit gegrillter Polenta</h4>
+              <h4>Grigliata Mista di Carne</h4>
+              <p>(Gemischtes gegrilltes Fleisch)</p>
             </li>
             <li>
-              <h4>Rinder-Tagliata mit Rucola, Parmesan und Kirschtomaten</h4>
+              <h4>Tagliata di Manzo con Rucola, Grana e Pomodorini</h4>
+              <p>(Rindersteakstreifen, Rucola, Grana, Kirschtomaten)</p>
             </li>
             <li>
-              <h4>Schweineschnitzel Mailänder Art mit Pommes frites</h4>
+              <h4>Cotoletta di Maiale alla Milanese con Patatine Fritte</h4>
+              <p>(Paniertes Schweinekotelett, Pommes frites)</p>
             </li>
           </ul>
         </section>
+
         <span id="mobilespan"></span>
         <section id="contorni">
           <h2>Beilagen</h2>
           <ul>
             <li>
-              <h4>French Fries</h4>
+              <h4>Patatine Fritte</h4>
+              <p>(Pommes frites)</p>
             </li>
             <li>
-              <h4>Browned Vegetables</h4>
+              <h4>Verdure Rosolate</h4>
+              <p>(Gebratenes Gemüse)</p>
             </li>
             <li>
-              <h4>Mixed Salad</h4>
-              (Green salad, tomatoes, carrots, cucumbers)
+              <h4>Insalata Mista</h4>
+              <p>(Grüner Salat, Tomaten, Karotten, Gurken)</p>
             </li>
             <li>
-              <h4>Green Salad</h4>
+              <h4>Insalata Verde</h4>
+              <p>(Grüner Salat)</p>
             </li>
           </ul>
         </section>
@@ -437,11 +477,11 @@ const MenuDE = () => {
             </li>
             <li>
               <h4>Estate</h4>
-              <p>(Mozzarella, cherry tomatoes, pesto)</p>
+              <p>(Mozzarella, Kirschtomaten, pesto)</p>
             </li>
             <li>
               <h4>Meraviglia</h4>
-              <p>(Brie, porcini, pesto di rucola, cherry tomatoes)</p>
+              <p>(Brie, Steinpilze, rucola pesto, Kirschtomaten)</p>
             </li>
           </ul>
         </section>

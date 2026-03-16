@@ -4,7 +4,6 @@ import Header from "../components/Header";
 import "../styles/Menu.css";
 
 const MenuEN = () => {
-  // ...existing code...
   const [showScrollButton, setShowScrollButton] = React.useState(false);
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
@@ -111,49 +110,63 @@ const MenuEN = () => {
               <p>(Sardines in saor, salted ood, mantis shrimps, moscardini)</p>
             </li>
             <li>
-              <h4>Prawns in Saor</h4>
+              <h4>Gamberi in Saor</h4>
+              <p>(Prawns, onions, vinegard)</p>
             </li>
             <li>
-              <h4>Sardines in Saor</h4>
+              <h4>Sarde in Saor</h4>
+              <p>(Sardines, onions, vinegard)</p>
             </li>
             <li>
-              <h4>Salted Cod</h4>
+              <h4>Baccalà Mantecato</h4>
+              <p>(Salted cod, cream, garlic)</p>
             </li>
             <li>
-              <h4>Mussels and Clams</h4>
+              <h4>Cozze e vongole</h4>
+              <p>(Mussels and clams)</p>
             </li>
             <li>
-              <h4>Marinara Musserls with Tomatoes Sauce</h4>
+              <h4>Cozze alla Marinara</h4>
+              <p>(Mussels in marinara sauce)</p>
             </li>
             <li>
-              <h4>Grilled Scallops</h4>
+              <h4>Capesante grigliate</h4>
+              <p>(Grilled scallops)</p>
             </li>
             <li>
-              <h4>Baby Octopus from Caorle</h4>
+              <h4>Moscardino di Caorle</h4>
+              <p>(Baby octopus from Caorle)</p>
             </li>
             <li>
-              <h4>Crab with Rosemary</h4>
+              <h4>Granchio al Rosmarino</h4>
+              <p>(Crab with rosemary)</p>
             </li>
             <li>
-              <h4>Schie and Corn meal</h4>
+              <h4>Schie e Polenta</h4>
+              <p>(Small shrimp with polenta)</p>
             </li>
             <li>
-              <h4>Crab with Rosemary</h4>
+              <h4>Alici Marinate</h4>
+              <p>(Marinated sardines)</p>
             </li>
           </ul>
           <h3>Meat Appetizer</h3>
           <ul>
             <li>
-              <h4>Bufala Mozzarella and Tomatoes</h4>
+              <h4>Caprese con Bufala e Pomodoro</h4>
+              <p>(Buffalo Mozzarella, Tomatoes)</p>
             </li>
             <li>
-              <h4>Raw Ham with Burrata</h4>
+              <h4>Prosciutto Crudo con Burrata</h4>
+              <p>(Raw Ham, Burrata)</p>
             </li>
             <li>
-              <h4>Raw Ham and Melon</h4>
+              <h4>Prosciutto e Melone</h4>
+              <p>(Raw Ham, Melon)</p>
             </li>
             <li>
-              <h4>Eggplant Parmesan</h4>
+              <h4>Parmigiana di Melanzane</h4>
+              <p>(Eggplant Parmesan)</p>
             </li>
           </ul>
           {showScrollButton && (
@@ -207,26 +220,32 @@ const MenuEN = () => {
           <h3>Fish First Courses</h3>
           <ul>
             <li>
-              <h4>Spaghetti with Seafood</h4>
+              <h4>Spaghetti allo Scoglio</h4>
+              <p>(Spaghetti with seafood)</p>
             </li>
             <li>
-              <h4>Spaghetti with Clams</h4>
+              <h4>Spaghetti alle Vongole</h4>
+              <p>(Spaghetti with clams)</p>
             </li>
             <li>
-              <h4>Homemade Tagliolini with Crab</h4>
+              <h4>Tagliolini al Granchio</h4>
+              <p>(Tagliolini with crab)</p>
             </li>
             <li>
-              <h4>Homemade Tagliolini with Cuttlefish Ink</h4>
+              <h4>Tagliolini al Nero di Seppia</h4>
+              <p>(Tagliolini with cuttlefish ink)</p>
             </li>
             <li>
               <h4>
-                Risotto with Seafood
+                Risotto ai Frutti di Mare
                 <br />
                 (Minimum 2 people)
               </h4>
+              <p>(Risotto with seafood)</p>
             </li>
             <li>
-              <h4>Homemade Gnocchi with Shrimps, Pesto and Cherry Tomatoes</h4>
+              <h4>Gnocchi con Gamberi, Pesto e Pomodorini</h4>
+              <p>(Homemade Gnocchi with Shrimps, Pesto and Cherry Tomatoes)</p>
             </li>
           </ul>
           <h3>Meat First Courses</h3>
@@ -241,10 +260,10 @@ const MenuEN = () => {
               <h4>Gnocchi Gorgonzola e Speck</h4>
             </li>
             <li>
-              <h4>Penne with Meat Sauce</h4>
+              <h4>Penne al Ragù</h4>
             </li>
             <li>
-              <h4>Penne with Tomato Sauce</h4>
+              <h4>Penne al Pomodoro</h4>
             </li>
           </ul>
         </section>
@@ -254,52 +273,68 @@ const MenuEN = () => {
           <h3>Fish Second Courses</h3>
           <ul>
             <li>
-              <h4>Baked Fish with Vegetables</h4>
+              <h4>Pesce al Forno</h4>
               <p>(Baked sea boss, sea bream, turbot with vegetables)</p>
             </li>
             <li>
-              <h4>Grilled Fish with Vegetables</h4>
+              <h4>Pesce alla Griglia</h4>
               <p>(Grilled sea boss, sea bream, turbot with vegetables)</p>
             </li>
             <li>
-              <h4>Mixed Grilled Fish and Polenta</h4>
+              <h4>Grigliata Mista di Pesce</h4>
               <p>
                 (Grilled sole, sea boss filet, prawn, cuttlefish and corn meal
                 porridge)
               </p>
             </li>
             <li>
-              <h4>Mixed Fried Fish with Fried Vegetables</h4>
+              <h4>Frittura Mista di Pesce con Verdurine Fritte</h4>
+              <p>(Fried mixed seafood, shrimp, calamari, fried vegetables)</p>
             </li>
+
             <li>
-              <h4>Fried Calamari with Fried Vegetables</h4>
+              <h4>Calamarini Fritti con Verdurine Fritte</h4>
+              <p>(Fried baby calamari, fried vegetables)</p>
             </li>
+
             <li>
-              <h4>Grilled Sole with Grilled Corn Meal Porridge</h4>
+              <h4>Sogliola alla Griglia con Polenta</h4>
+              <p>(Grilled sole, polenta)</p>
             </li>
+
             <li>
-              <h4>Grilled Cuttlefish</h4>
+              <h4>Seppie alla Griglia</h4>
+              <p>(Grilled cuttlefish)</p>
             </li>
+
             <li>
-              <h4>Steamed Cuttlefish with Corn Meal Porridge</h4>
+              <h4>Seppie in Umido con Polenta</h4>
+              <p>(Cuttlefish in tomato sauce, polenta)</p>
             </li>
+
             <li>
-              <h4>Baked Sea Boss with Taggiasche Olives and Cherry Tomatoes</h4>
+              <h4>
+                Filetto di Branzino al Forno con Pomodorini e Olive Taggiasche
+              </h4>
+              <p>(Baked sea bass fillet, cherry tomatoes, Taggiasca olives)</p>
             </li>
           </ul>
           <h3>Meat Second Courses</h3>
           <ul>
             <li>
-              <h4>Mixed Grilled Meat with Grilled Corn Meal Porridge</h4>
+              <h4>Grigliata Mista di Carne</h4>
+              <p>Mixed Grilled Meat with Grilled Corn Meal Porridge</p>
             </li>
             <li>
-              <h4>
+              <h4>Tagliata di Manzo con Rucola, Grana e Pomodorini</h4>
+              <p>
                 Thick-sliced Beef Steak with Arugula, Parmesan and Cherry
                 Tomatoes
-              </h4>
+              </p>
             </li>
             <li>
-              <h4>Fried Pork Cutlet alla Milanese with French Fries</h4>
+              <h4>Cotoletta di Maiale alla Milanese con Patatine Fritte</h4>
+              <p>Fried Pork Cutlet alla Milanese with French Fries</p>
             </li>
           </ul>
         </section>
@@ -308,17 +343,20 @@ const MenuEN = () => {
           <h2>Sides</h2>
           <ul>
             <li>
-              <h4>French Fries</h4>
+              <h4>Patatine fritte</h4>
+              <p>French Fries</p>
             </li>
             <li>
-              <h4>Browned Vegetables</h4>
+              <h4>Verdure Rosolate</h4>
+              <p>Browned Vegetables</p>
             </li>
             <li>
-              <h4>Mixed Salad</h4>
-              (Green salad, tomatoes, carrots, cucumbers)
+              <h4>Insalata Mista</h4>
+              <p>(Green salad, tomatoes, carrots, cucumbers)</p>
             </li>
             <li>
-              <h4>Green Salad</h4>
+              <h4>Insalata Verde</h4>
+              <p>(Green salad)</p>
             </li>
           </ul>
         </section>
@@ -435,7 +473,7 @@ const MenuEN = () => {
             </li>
             <li>
               <h4>Meraviglia</h4>
-              <p>(Brie, porcini, pesto di rucola, cherry tomatoes)</p>
+              <p>(Brie, mushrooms, rucola's pesto, cherry tomatoes)</p>
             </li>
           </ul>
         </section>

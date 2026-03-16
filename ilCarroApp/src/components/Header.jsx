@@ -4,7 +4,7 @@ import "../styles/Header.css";
 
 const Header = ({ isMenuPage }) => {
   return (
-    <header className="header">
+    <header className={`header ${!isMenuPage ? "home-header" : ""}`}>
       <nav className="header-nav-1">
         <ul>
           <li>
@@ -18,7 +18,7 @@ const Header = ({ isMenuPage }) => {
           </li>
           <li id="menu-2">
             <Link to="/menu">
-              Visita il menù
+              Visita il nostro menù
               <img src="/assets/menu.png" alt="" />
             </Link>
           </li>
@@ -28,9 +28,7 @@ const Header = ({ isMenuPage }) => {
       <section className="fixed-mobile-section">
         <div className="menu">
           <Link to="/menu">
-            <a href="menu">
-              {isMenuPage ? "Choose the language:" : "Visita il menù"}
-            </a>
+            {isMenuPage ? "Choose the language:" : "Visita il menù"}
             {isMenuPage ? (
               <span
                 style={{
