@@ -1,7 +1,7 @@
 import React from "react";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import "../styles/Menu.css";
+import "../styles/menu.css";
 
 const MenuDE = () => {
   const [showScrollButton, setShowScrollButton] = React.useState(false);
