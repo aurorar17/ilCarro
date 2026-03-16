@@ -9,26 +9,28 @@ const Footer = () => {
         <nav className="footer-nav">
           {/* <h4>Contatti</h4> */}
           <table class="contact-table">
-            <tr>
-              <th>Email:</th>
-            </tr>
-            <tr>
-              <td>ristoranteilcarro.dunaverde@gmail.com</td>
-            </tr>
+            <tbody>
+              <tr>
+                <th>Email:</th>
+              </tr>
+              <tr>
+                <td>ristoranteilcarro.dunaverde@gmail.com</td>
+              </tr>
 
-            <tr>
-              <th>Telefono:</th>
-            </tr>
-            <tr>
-              <td>+39 0421 299478</td>
-            </tr>
+              <tr>
+                <th>Telefono:</th>
+              </tr>
+              <tr>
+                <td>+39 0421 299478</td>
+              </tr>
 
-            <tr>
-              <th>Indirizzo:</th>
-            </tr>
-            <tr>
-              <td>viale Selva Rosata 30, Caorle, Italia</td>
-            </tr>
+              <tr>
+                <th>Indirizzo:</th>
+              </tr>
+              <tr>
+                <td>viale Selva Rosata 30, Caorle, Italia</td>
+              </tr>
+            </tbody>
           </table>
           <section className="link-utili-section">
             <iframe
@@ -42,42 +44,44 @@ const Footer = () => {
           </section>
           {/* <h4>Orari</h4> */}
           <table id="orari-tab">
-            <tr>
-              <th>Giorni</th>
-              <th>Orari</th>
-            </tr>
-            <tr>
-              <td id="th-1">Lunedi</td>
-              <td>12:00 - 14:30</td>
-            </tr>
-            <tr>
-              <td id="th-1">Martedì</td>
-              <td>CHIUSO</td>
-            </tr>
-            <tr>
-              <td id="th-1">Mercoledì</td>
-              <td>12:00 - 14:30</td>
-            </tr>
-            <tr>
-              <td id="th-1">Giovedì</td>
-              <td>12:00 - 14:30</td>
-            </tr>
-            <tr>
-              <td id="th-1">Venerdì</td>
-              <td>12:30 - 14:30 / 18:30 - 23:30</td>
-            </tr>
-            <tr>
-              <td id="th-1">Sabato</td>
-              <td>12:30 - 14:30 / 18:30 - 23:30</td>
-            </tr>
-            <tr>
-              <td id="th-1">Domenica</td>
-              <td>12:30 - 14:30</td>
-            </tr>
+            <tbody>
+              <tr>
+                <th>Giorni</th>
+                <th>Orari</th>
+              </tr>
+              <tr>
+                <td id="th-1">Lunedi</td>
+                <td>12:00 - 14:30</td>
+              </tr>
+              <tr>
+                <td id="th-1">Martedì</td>
+                <td>CHIUSO</td>
+              </tr>
+              <tr>
+                <td id="th-1">Mercoledì</td>
+                <td>12:00 - 14:30</td>
+              </tr>
+              <tr>
+                <td id="th-1">Giovedì</td>
+                <td>12:00 - 14:30</td>
+              </tr>
+              <tr>
+                <td id="th-1">Venerdì</td>
+                <td>12:30 - 14:30 / 18:30 - 23:30</td>
+              </tr>
+              <tr>
+                <td id="th-1">Sabato</td>
+                <td>12:30 - 14:30 / 18:30 - 23:30</td>
+              </tr>
+              <tr>
+                <td id="th-1">Domenica</td>
+                <td>12:30 - 14:30</td>
+              </tr>
+            </tbody>
           </table>
         </nav>
-        <section class="footer-logo-section">
-          <img src="/assets/logodef.png" alt="Logo" class="no-responsive" />
+        <section className="footer-logo-section">
+          <img src="/assets/logodef.png" alt="Logo" className="no-responsive" />
         </section>
       </div>
     </footer>
