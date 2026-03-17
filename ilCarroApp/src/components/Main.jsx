@@ -2,7 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Gallery from "./Gallery.jsx";
 import "../styles/main-section.css";
-import TripAdv from "./TripAdv.jsx";
+// import TripAdv from "./TripAdv.jsx";
+
 const Main = () => {
   return (
     <section>
@@ -31,9 +32,9 @@ const Main = () => {
       <div>
         <Gallery />
       </div>
-      <div>
+      {/* <div>
         <TripAdv />
-      </div>
+      </div> */}
     </section>
   );
 };
