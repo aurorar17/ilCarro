@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Gallery from "./Gallery";
 import "../styles/main-section.css";
-import TripAdv from "./Tripadv";
+import TripAdv from "./TripAdv";
 
 const Main = () => {
   return (
