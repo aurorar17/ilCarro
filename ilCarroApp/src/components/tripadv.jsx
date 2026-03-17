@@ -3,7 +3,6 @@ import "../styles/tripadv.css";
 
 const TripAdv = () => {
   useEffect(() => {
-    // Carica gli script di TripAdvisor dopo che il DOM è pronto
     const script1 = document.createElement("script");
     script1.async = true;
     script1.src =
