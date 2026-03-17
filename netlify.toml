@@ -1,4 +1,4 @@
 [build]
   base = "ilCarroApp"
   command = "npm ci && npm run build"
-  publish = "ilCarroApp/dist"
+  publish = "dist"
