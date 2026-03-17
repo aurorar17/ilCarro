@@ -83,6 +83,12 @@ const Footer = () => {
         <section className="footer-logo-section">
           <img src="/assets/logodef.png" alt="Logo" className="no-responsive" />
         </section>
+        <div>
+          <p className="privacy-policy">
+            "Questo sito rispetta le norme UE riguardanti la privacy: non
+            utilizza cookie e non effettua tracciamenti degli utenti."
+          </p>
+        </div>
       </div>
     </footer>
   );
