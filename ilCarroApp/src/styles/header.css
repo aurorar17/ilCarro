@@ -8,6 +8,10 @@
   font-style: italic;
 }
 
+.header {
+  margin-bottom: 10%;
+}
+
 @media (max-width: 768px) {
   .header-nav-1 {
     display: flex;
@@ -16,6 +20,10 @@
     padding-right: 100%;
     margin-bottom: 0%;
     background-color: rgb(116, 91, 62);
+  }
+
+  .header {
+    margin-bottom: 10%;
   }
 
   .header-nav-1 img {
@@ -86,6 +94,7 @@
 
   .header {
     border: none;
+    margin-bottom: 3%;
   }
 
   .header-nav-1 {
