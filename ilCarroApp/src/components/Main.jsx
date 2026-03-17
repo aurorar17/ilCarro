@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Gallery from "./Gallery";
+import Gallery from "./Gallery.jsx";
 import "../styles/main-section.css";
-import TripAdv from "./TripAdv";
+import TripAdv from "./TripAdv.jsx";
 
 const Main = () => {
   return (
