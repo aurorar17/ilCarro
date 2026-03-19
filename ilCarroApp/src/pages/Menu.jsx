@@ -109,7 +109,7 @@ const Menu = () => {
             </li>
             <li>
               <h4>Cicchetti Veneziani</h4>
-              <p>(Sarde in Saor, Caccalà Mantecato, Canoce, Moscardino)</p>
+              <p>(Sarde in Saor, Baccalà Mantecato, Canoce, Moscardino)</p>
             </li>
             <li>
               <h4>Gamberi in Saor</h4>
