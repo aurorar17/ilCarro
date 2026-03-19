@@ -94,22 +94,22 @@ const Menu = () => {
           <ul>
             <li>
               <h4>Tavolozza di Crudo</h4>
-              <p>(Tonno, salmone, branzino, scampi, gamberi rossi)</p>
+              <p>(Tonno, Salmone, Branzino, Scampi, Gamberi Rossi)</p>
             </li>
             <li>
               <h4>Antipasto Misto dell' Adriatico</h4>
               <p>
-                (Crema di dentice, sarde in saor, moscardino, coda di gamberi,
-                seppie, canace)
+                (Crema di Dentice, Sarde in Saor, Moscardino, Coda di Gamberi,
+                Seppie, Canoce)
               </p>
             </li>
             <li>
               <h4>Antipasto di Pesce Affumicato</h4>
-              <p>(Seppie, salmone, tonno, ombrina, spada)</p>
+              <p>(Seppie, Salmone, Tonno, Ombrina, Pesce Spada)</p>
             </li>
             <li>
               <h4>Cicchetti Veneziani</h4>
-              <p>(Sarde in saor, baccalà mantecato, canoce, moscardino)</p>
+              <p>(Sarde in saor, Caccalà Mantecato, Canoce, Moscardino)</p>
             </li>
             <li>
               <h4>Gamberi in Saor</h4>
@@ -127,7 +127,7 @@ const Menu = () => {
               <h4>Cozze alla Marinara</h4>
             </li>
             <li>
-              <h4>Capesante grigliate</h4>
+              <h4>Capesante Grigliate</h4>
             </li>
             <li>
               <h4>Moscardino di Caorle</h4>
@@ -256,11 +256,11 @@ const Menu = () => {
           <ul>
             <li>
               <h4>Pesce al Forno</h4>
-              <p>(Branzino, orata, rombo con verdure)</p>
+              <p>(Branzino, Orata, Rombo con Verdure)</p>
             </li>
             <li>
               <h4>Pesce alla Griglia</h4>
-              <p>(Branzino, orata, rombo con verdure)</p>
+              <p>(Branzino, Orata, Rombo con Verdure)</p>
             </li>
             <li>
               <h4>Grigliata Mista di Pesce</h4>
@@ -312,7 +312,7 @@ const Menu = () => {
             </li>
             <li>
               <h4>Insalata Mista</h4>
-              (Insalata Verde, pomodori, carote, Cetrioli)
+              (Insalata Verde, Pomodori, Carote, Cetrioli)
             </li>
             <li>
               <h4>Insalata Verde</h4>
@@ -325,115 +325,115 @@ const Menu = () => {
           <ul>
             <li>
               <h4>Margherita</h4>
-              <p>(Pomodoro, mozzarella)</p>
+              <p>(Pomodoro, Mozzarella)</p>
             </li>
             <li>
               <h4>Marinara</h4>
-              <p>(Pomodoro, aglio, origano)</p>
+              <p>(Pomodoro, Aglio, Origano)</p>
             </li>
             <li>
               <h4>Prosciutto e Funghi</h4>
-              <p>(Pomodoro, mozzarella, prosciutto cotto, funghi)</p>
+              <p>(Pomodoro, Mozzarella, Prosciutto Cotto, Funghi)</p>
             </li>
             <li>
               <h4>Capricciosa</h4>
               <p>
-                (Pomodoro, mozzarella, funghi, carciofini, prosciutto cotto )
+                (Pomodoro, Mozzarella, Funghi, Carciofini, Prosciutto Cotto)
               </p>
             </li>
             <li>
               <h4>Napoli</h4>
-              <p>(Pomodoro, mozzarella, capperi, acciughe)</p>
+              <p>(Pomodoro, Mozzarella, Capperi, Acciughe)</p>
             </li>
             <li>
               <h4>Tonno e Cipolla</h4>
-              <p>(Pomodoro, mozzarella, tonno, cipolla)</p>
+              <p>(Pomodoro, Mozzarella, Tonno, Cipolla)</p>
             </li>
             <li>
               <h4>4 Stagioni</h4>
               <p>
-                (Pomodoro, mozzarella, prosciutto cotto, funghi, carciofini,
-                salamino )
+                (Pomodoro, Mozzarella, Prosciutto Cotto, Funghi, Carciofini,
+                Salamino)
               </p>
             </li>
             <li>
               <h4>Viennese</h4>
-              <p>(Pomodoro, mozzarella, wurstel)</p>
+              <p>(Pomodoro, Mozzarella, Wurstel)</p>
             </li>
             <li>
               <h4>Quattro Formaggi</h4>
-              <p>(Pomodoro, mozzarella, brie, gorgonzola)</p>
+              <p>(Pomodoro, Mozzarella, Brie, Gorgonzola)</p>
             </li>
             <li>
               <h4>Patatosa</h4>
-              <p>(Pomodoro, mozzarella, patatine fritte)</p>
+              <p>(Pomodoro, Mozzarella, Patatine Fritte)</p>
             </li>
             <li>
               <h4>Pugliese</h4>
-              <p>(Pomodoro, mozzarella, cipolla)</p>
+              <p>(Pomodoro, Mozzarella, Cipolla)</p>
             </li>
             <li>
               <h4>Diavola</h4>
-              <p>(Pomodoro, mozzarella, salamino piccante)</p>
+              <p>(Pomodoro, Mozzarella, Salamino Piccante)</p>
             </li>
             <li>
               <h4>San Daniele</h4>
-              <p>(Pomodoro, mozzarella, prosciutto crudo San Daniele)</p>
+              <p>(Pomodoro, Mozzarella, Prosciutto Crudo San Daniele)</p>
             </li>
             <li>
               <h4>Frutti di Mare</h4>
-              <p>(Pomodoro, mozzarella, frutti di mare)</p>
+              <p>(Pomodoro, Mozzarella, Frutti Di Mare)</p>
             </li>
             <li>
               <h4>Sorrentina</h4>
               <p>
-                (Pomodoro, mozzarella, funghi, carciofi, peperoni, salamino,
-                prosciutto cotto, cipolla, aglio)
+                (Pomodoro, Mozzarella, Funghi, Carciofi, Peperoni, Salamino,
+                Prosciutto Cotto, Cipolla, Aglio)
               </p>
             </li>
             <li>
               <h4>Zingara</h4>
-              <p>(Pomodoro, mozzarella, funghi, peperoni)</p>
+              <p>(Pomodoro, Mozzarella, Funghi, Peperoni)</p>
             </li>
             <li>
               <h4>Vegetariana</h4>
               <p>
-                (Pomodoro, mozzarella, zucchine, melanzane, peperoni grigliati)
+                (Pomodoro, Mozzarella, Zucchine, Melanzane, Peperoni Grigliati)
               </p>
             </li>
             <li>
               <h4>Fresca</h4>
-              <p>(Pomodoro, mozzarella, rucola, pomodorini, grana)</p>
+              <p>(Pomodoro, Mozzarella, Rucola, Pomodorini, Grana)</p>
             </li>
             <li>
               <h4>"il Carro"</h4>
               <p>
-                (Pomodoro, mozzarella, funghi, uovo, carciofi, prosciutto crudo)
+                (Pomodoro, Mozzarella, Funghi, Uovo, Carciofi, Prosciutto Crudo)
               </p>
             </li>
             <li>
               <h4>Bresaola Rucola e Grana</h4>
-              <p>(Pomodoro, mozzarella, bresaola, rucola, grana padano)</p>
+              <p>(Pomodoro, Mozzarella, Bresaola, Rucola, Grana Padano)</p>
             </li>
             <li>
               <h4>Hawaii</h4>
-              <p>(Pomodoro, mozzarella, prosciutto, ananas)</p>
+              <p>(Pomodoro, Mozzarella, Prosciutto, Ananas)</p>
             </li>
             <li>
               <h4>Malga</h4>
-              <p>(Pomodoro, mozzarella, brie, speck, porcini)</p>
+              <p>(Pomodoro, Mozzarella, Brie, Speck, Porcini)</p>
             </li>
             <li>
               <h4>Calzone Classico</h4>
-              <p>(Pomodoro, mozzarella, prosciutto cotto, funghi)</p>
+              <p>(Pomodoro, Mozzarella, Prosciutto Cotto, Funghi)</p>
             </li>
             <li>
               <h4>Estate</h4>
-              <p>(Mozzarella, pomodorini, pesto)</p>
+              <p>(Mozzarella, Pomodorini, Pesto)</p>
             </li>
             <li>
               <h4>Meraviglia</h4>
-              <p>(Brie, porcini, pesto di rucola, pomodorini)</p>
+              <p>(Brie, Porcini, Pesto Di Rucola, Pomodorini)</p>
             </li>
           </ul>
         </section>
