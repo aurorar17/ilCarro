@@ -71,15 +71,15 @@ const Footer = () => {
               </tr>
               <tr>
                 <td id="th-1">Sabato</td>
-                <td>12:30 - 14:30</td>
-                <br />
-                <td>18:30 - 23:30</td>
+                <td>
+                  12:30 - 14:30 <br /> 18:30 - 23:30
+                </td>
               </tr>
               <tr>
                 <td id="th-1">Domenica</td>
-                <td>12:30 - 14:30</td>
-                <br />
-                <td>18:30 - 23:30</td>
+                <td>
+                  12:30 - 14:30 <br /> 18:30 - 23:30
+                </td>
               </tr>
             </tbody>
           </table>
