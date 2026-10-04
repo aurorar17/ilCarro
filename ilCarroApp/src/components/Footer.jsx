@@ -50,36 +50,8 @@ const Footer = () => {
                 <th>Orari</th>
               </tr>
               <tr>
-                <td id="th-1">Lunedi</td>
-                <td>18:30 - 23:30</td>
-              </tr>
-              <tr>
-                <td id="th-1">Martedì</td>
-                <td>18:30 - 23:30</td>
-              </tr>
-              <tr>
-                <td id="th-1">Mercoledì</td>
-                <td>18:30 - 23:30</td>
-              </tr>
-              <tr>
-                <td id="th-1">Giovedì</td>
-                <td>18:30 - 23:30</td>
-              </tr>
-              <tr>
-                <td id="th-1">Venerdì</td>
-                <td>18:30 - 23:30</td>
-              </tr>
-              <tr>
-                <td id="th-1">Sabato</td>
-                <td>
-                  12:30 - 14:30 <br /> 18:30 - 23:30
-                </td>
-              </tr>
-              <tr>
-                <td id="th-1">Domenica</td>
-                <td>
-                  12:30 - 14:30 <br /> 18:30 - 23:30
-                </td>
+                <td id="th-1">TEMPORANEAMENTE</td>
+                <td>CHIUSO</td>
               </tr>
             </tbody>
           </table>
