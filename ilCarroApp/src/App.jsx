@@ -9,10 +9,13 @@ import Header from "./components/Header";
 import Menu from "./pages/Menu";
 import MenuEN from "./pages/MenuEN";
 import MenuDE from "./pages/MenuDE";
+import CookieConsent from "./components/CookieConsent";
+import Privacy from "./pages/Privacy";
 
 function App() {
   return (
     <Router>
+      <CookieConsent />
       {/* Menu di navigazione */}
       <nav>
         <Link to="/"></Link>
@@ -24,6 +27,7 @@ function App() {
         <Route path="/menu" element={<Menu />} />
         <Route path="/menu-en" element={<MenuEN />} />
         <Route path="/menu-de" element={<MenuDE />} />
+        <Route path="/privacy" element={<Privacy />} />
       </Routes>
     </Router>
   );

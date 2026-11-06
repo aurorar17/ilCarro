@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/footer.css";
 import "../styles/main.css";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -61,8 +62,8 @@ const Footer = () => {
         </section>
         <div>
           <p className="privacy-policy">
-            "Questo sito rispetta le norme UE riguardanti la privacy: non
-            utilizza cookie e non effettua tracciamenti degli utenti."
+            Questo sito utilizza Google Analytics solo secondo le preferenze
+            espresse. <Link to="/privacy">Leggi l’informativa privacy e cookie</Link>.
           </p>
         </div>
       </div>
